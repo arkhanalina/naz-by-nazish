@@ -1,0 +1,6 @@
+{
+  "name": "naz by nazish",
+  "description": "Premium interior and architectural design transformations by Ar. Alina Nazish. Helping real estate agents and property owners sell high-end apartments and villas faster.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
