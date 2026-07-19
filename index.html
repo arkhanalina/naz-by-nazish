@@ -1,575 +1,1435 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="naz by nazish — Premium interior and architectural transformations by Ar. Alina Nazish. Accelerating sales of elite apartments and luxury villas." />
-    <title>naz by nazish | High-End Architectural Staging & Design</title>
-    <!-- Google Fonts & Custom CSS -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>naz by nazish | Luxury Interior Architecture & High-End Staging</title>
+  
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- 1. NAVIGATION BAR -->
-    <header id="site-header">
-      <div class="container" id="nav-container-wrapper">
-        <nav id="nav-container">
-          <a href="#section-hero" id="brand-logo" title="naz by nazish">
-            <span id="logo-text">naz</span>
-            <span id="logo-subtitle">by Ar. Alina Nazish</span>
-          </a>
-          
-          <!-- Desktop Navigation -->
-          <ul id="nav-menu">
-            <li class="nav-item"><a href="#section-hero" class="nav-link" id="nav-link-home">Home</a></li>
-            <li class="nav-item"><a href="#section-about" class="nav-link" id="nav-link-about">About</a></li>
-            <li class="nav-item"><a href="#section-portfolio" class="nav-link" id="nav-link-portfolio">Portfolio</a></li>
-            <li class="nav-item"><a href="#section-reviews" class="nav-link" id="nav-link-reviews">Testimonials</a></li>
-            <li class="nav-item"><a href="#section-faq" class="nav-link" id="nav-link-faq">FAQ</a></li>
-            <li class="nav-item"><a href="#section-contact" class="nav-link" id="nav-link-contact-menu">Contact</a></li>
-            <li class="nav-item">
-              <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer" id="nav-cta" title="Consult on WhatsApp">Inquire</a>
-            </li>
-          </ul>
+  <!-- ==========================================
+       1. NAVIGATION HEADER
+       ========================================== -->
+  <header id="header">
+    <div class="container nav-container">
+      <!-- Branding Logo -->
+      <a href="#home" class="logo" id="nav-logo">
+        <span class="logo-main">naz by nazish</span>
+        <span class="logo-sub" data-tr="logo_sub">by Ar. Alina Nazish</span>
+      </a>
 
-          <!-- Mobile Burger Trigger -->
-          <button id="menu-toggle" aria-label="Toggle Navigation Menu">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-        </nav>
+      <div class="nav-right-group">
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-links">
+          <li><a href="#home" class="active" data-tr="nav_home">Home</a></li>
+          <li><a href="#about" data-tr="nav_about">About</a></li>
+          <li><a href="#portfolio" data-tr="nav_portfolio">Portfolio</a></li>
+          <li><a href="#faq" data-tr="nav_faq">FAQ</a></li>
+          <li><a href="#contact" data-tr="nav_contact">Contact</a></li>
+        </ul>
+
+        <!-- Language Selector -->
+        <div class="lang-selector" id="desktop-lang">
+          <button class="lang-btn active" data-lang-opt="en">EN</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang-opt="ru">RU</button>
+          <span class="lang-divider">/</span>
+          <button class="lang-btn" data-lang-opt="ar">AR</button>
+        </div>
       </div>
-    </header>
 
-    <!-- 2. HERO SECTION -->
-    <section id="section-hero">
-      <div id="hero-bg-overlay"></div>
-      <div class="container" id="hero-container">
-        <div id="hero-content-box" class="scroll-reveal active">
-          <p id="hero-tagline">Architectural Staging & Interior Strategy</p>
-          <h1 id="hero-headline">Designed to Sell.<br><span class="text-metallic">Accelerating Value.</span></h1>
-          <p id="hero-intro">
-            We transform elite apartments and villas into highly coveted real estate assets. 
-            Properties designed and staged by Alina Nazish capture emotional premiums, command higher prices, and close up to 3x faster.
-          </p>
-          
-          <!-- Staging Impact Stats Callout -->
-          <div id="hero-metrics-container">
-            <div class="hero-metric-item" id="metric-item-1">
-              <span class="metric-value text-metallic">3x</span>
-              <span class="metric-label">Sales Velocity</span>
-            </div>
-            <div class="hero-metric-item" id="metric-item-2">
-              <span class="metric-value text-metallic">+22%</span>
-              <span class="metric-label">Value Premium</span>
-            </div>
-            <div class="hero-metric-item" id="metric-item-3">
-              <span class="metric-value text-metallic">100%</span>
-              <span class="metric-label">Client Success</span>
-            </div>
-          </div>
+      <!-- Hamburger Trigger for Mobile -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </header>
 
-          <!-- Primary Call To Action -->
-          <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer" class="button-primary" id="hero-cta-btn">
-            <span>Direct Commission via WhatsApp</span>
-            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+  <!-- Mobile Menu Slideout Overlay -->
+  <nav class="mobile-nav" id="mobile-menu">
+    <!-- Mobile Language Selector -->
+    <div class="lang-selector mobile-lang">
+      <button class="lang-btn active" data-lang-opt="en">EN</button>
+      <span class="lang-divider">/</span>
+      <button class="lang-btn" data-lang-opt="ru">RU</button>
+      <span class="lang-divider">/</span>
+      <button class="lang-btn" data-lang-opt="ar">AR</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="active" data-tr="nav_home">Home</a></li>
+      <li><a href="#about" data-tr="nav_about">About</a></li>
+      <li><a href="#portfolio" data-tr="nav_portfolio">Portfolio</a></li>
+      <li><a href="#faq" data-tr="nav_faq">FAQ</a></li>
+      <li><a href="#contact" data-tr="nav_contact">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-info">
+      <p data-tr="direct_inquiries">Direct Inquiries</p>
+      <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer" class="num">+971 56 309 2692</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       2. HERO SECTION
+       ========================================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-grid">
+      
+      <!-- Value Proposition Content -->
+      <div class="hero-content reveal reveal-up">
+        <div class="hero-label">
+          <span class="line"></span>
+          <span class="uppercase-sans metallic-text" data-tr="hero_label">Luxury Property Acceleration</span>
+        </div>
+        <h1 class="hero-title serif-font" data-tr="hero_title">
+          Transforming <br>
+          <span class="italic-serif italic">Prime Real Estate</span> <br>
+          <span class="metallic-text">3x Faster.</span>
+        </h1>
+        <p class="hero-description" data-tr="hero_desc">
+          We engineer high-end architectural aesthetics and bespoke interior staging for elite apartments and villas in Dubai. Designed to stimulate rapid emotional value and trigger immediate, premium offers.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp" id="hero-cta-primary">
+            <!-- Inline WhatsApp SVG Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.503-5.714-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.79 1.978 14.317.954 11.7.954c-5.438 0-9.863 4.37-9.867 9.8c-.001 1.74.475 3.442 1.381 4.966L2.185 20.89l5.462-1.736zM17.96 15.02c-.287-.144-1.7-.84-1.962-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-.288-.144-1.216-.448-2.316-1.432-.856-.764-1.433-1.708-1.6-2-.168-.288-.018-.444.126-.587.13-.13.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.233-.561-.469-.485-.648-.494-.168-.008-.36-.01-.552-.01s-.504.072-.768.36c-.264.288-1.008.984-1.008 2.4s1.032 2.784 1.176 2.976c.144.192 2.032 3.102 4.92 4.35.687.297 1.224.476 1.643.608.69.219 1.318.188 1.815.114.553-.082 1.7-.696 1.942-1.368.243-.672.243-1.248.17-1.368-.073-.12-.265-.216-.553-.36z"/>
             </svg>
+            <span data-tr="cta_whatsapp">Consult on WhatsApp</span>
           </a>
+          <a href="#portfolio" class="btn btn-secondary btn-arrow" id="hero-cta-secondary" data-tr="cta_showcase">View Showcase</a>
         </div>
       </div>
-    </section>
 
-    <!-- 3. ABOUT SECTION -->
-    <section id="section-about">
-      <div class="container" id="about-container">
-        <div id="about-grid">
+      <!-- Interactive Before / After Image Comparison Slider -->
+      <div class="slider-container-box reveal reveal-up delay-2">
+        <div class="ba-slider" id="impact-slider">
+          <!-- Raw Space (Before) -->
+          <div class="img before-img"></div>
+          <span class="slider-label before" data-tr="before_label">Before</span>
           
-          <!-- Left: Elegant Visual Frame -->
-          <div id="about-media" class="scroll-reveal">
-            <div id="about-frame">
-              <img id="about-img" src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80&w=800" alt="Ar. Alina Nazish inside a contemporary designed space" loading="lazy" />
-            </div>
-            <div id="about-accent-block">
-              <h4 id="accent-block-title" class="text-metallic">The Nazish Formula</h4>
-              <p id="accent-block-desc">
-                Merging strict architectural principles with high-net-worth buyer psychology to craft unmatched spatial desire.
-              </p>
-            </div>
-          </div>
-
-          <!-- Right: Strategy and Biography -->
-          <div id="about-description-box" class="scroll-reveal">
-            <div class="section-subtitle">The Visionary</div>
-            <h2 id="about-philosophy-title">Ar. Alina Nazish</h2>
-            <p class="about-paragraph">
-              Ar. Alina Nazish is a premier architectural planner and high-end interior staging specialist. Her work transcends traditional interior decorating to offer sophisticated physical marketing solutions for developer groups, high-end real estate agents, and luxury villa owners.
-            </p>
-            <p class="about-paragraph">
-              By carefully analyzing the flow of light, geometric proportions, and prestigious tactile elements, Alina crafts environments that establish immediate emotional desire. Her signature minimalist aesthetic creates spaciousness, depth, and the exact "expensive villa" atmosphere that turns viewers into motivated premium buyers.
-            </p>
-
-            <!-- Highlights -->
-            <div id="about-highlights">
-              <div class="highlight-item" id="hl-1">
-                <h3 class="highlight-header">Architectural Rigor</h3>
-                <p class="highlight-text">Form, scale, and high-impact layouts designed with strict planner precision.</p>
-              </div>
-              <div class="highlight-item" id="hl-2">
-                <h3 class="highlight-header">Commercial Velocity</h3>
-                <p class="highlight-text">Every spatial choice is calculated to reduce staging duration and holding costs.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. PORTFOLIO SECTION -->
-    <section id="section-portfolio">
-      <div class="container" id="portfolio-container">
-        <div class="section-title-wrapper scroll-reveal">
-          <div class="section-subtitle">Exemplary Transformations</div>
-          <h2 class="section-title">The Masterworks</h2>
-        </div>
-
-        <!-- Asymmetric Portfolio Grid -->
-        <div id="portfolio-grid">
+          <!-- Styled Space (After) -->
+          <div class="img after-img" id="after-image"></div>
+          <span class="slider-label after" data-tr="after_label">After Redesign</span>
           
-          <!-- Card 1: Villa Exterior / Living Room (Large Left) -->
-          <div class="portfolio-card large-left scroll-reveal" id="portfolio-1">
-            <div class="portfolio-badge">Staged &amp; Sold | 9 Days</div>
-            <div class="portfolio-media-wrapper">
-              <img class="portfolio-image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1000" alt="Contemporary luxury villa living room design" loading="lazy" />
-              <div class="portfolio-overlay">
-                <span class="portfolio-type">Custom Luxury Villa</span>
-                <h3 class="portfolio-name">The Obsidian Lounge</h3>
-                <div class="portfolio-meta-grid">
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Location</span>
-                    <span class="portfolio-meta-val">Palm Jumeirah</span>
-                  </div>
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Staging Outcome</span>
-                    <span class="portfolio-meta-val">Closed 26% Over Ask</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Interactive Bar & Handle -->
+          <div class="slider-bar" id="slider-bar"></div>
+          <div class="slider-handle" id="slider-handle"></div>
+        </div>
+        <p class="slider-instructions" data-tr="drag_instructions">← Drag Slider to Compare →</p>
+      </div>
 
-          <!-- Card 2: Modern Bedroom Concept (Medium Right) -->
-          <div class="portfolio-card medium-right scroll-reveal" id="portfolio-2">
-            <div class="portfolio-badge">Staged &amp; Sold | Jumeirah</div>
-            <div class="portfolio-media-wrapper">
-              <img class="portfolio-image" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800" alt="Luxury minimal bedroom suite staging" loading="lazy" />
-              <div class="portfolio-overlay">
-                <span class="portfolio-type">High-End Suite</span>
-                <h3 class="portfolio-name">Monochrome Sanctuary</h3>
-                <div class="portfolio-meta-grid">
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Scope</span>
-                    <span class="portfolio-meta-val">Master Bedroom</span>
-                  </div>
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Sale Velocity</span>
-                    <span class="portfolio-meta-val">Under Offer in 14 Days</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
 
-          <!-- Card 3: Minimalist Dining Room (Medium Left) -->
-          <div class="portfolio-card medium-left scroll-reveal" id="portfolio-3">
-            <div class="portfolio-badge">Staged &amp; Sold | Penthouse</div>
-            <div class="portfolio-media-wrapper">
-              <img class="portfolio-image" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800" alt="Minimalist marble bathroom design" loading="lazy" />
-              <div class="portfolio-overlay">
-                <span class="portfolio-type">Waterfront Penthouse</span>
-                <h3 class="portfolio-name">The Chrome Oasis</h3>
-                <div class="portfolio-meta-grid">
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Location</span>
-                    <span class="portfolio-meta-val">Marina Heights</span>
-                  </div>
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Staging Outcome</span>
-                    <span class="portfolio-meta-val">3x Faster Close</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- ==========================================
+       3. METRICS BANNER
+       ========================================== -->
+  <section class="metrics-banner">
+    <div class="container metrics-grid">
+      <!-- Metric 1 -->
+      <div class="metric-card reveal reveal-up">
+        <span class="metric-num serif-font metallic-text" data-tr="metric_1_num">3x</span>
+        <span class="metric-label" data-tr="metric_1_label">Faster Sales Cycle</span>
+      </div>
+      <!-- Metric 2 -->
+      <div class="metric-card reveal reveal-up delay-1">
+        <span class="metric-num serif-font metallic-text" data-tr="metric_2_num">14</span>
+        <span class="metric-label" data-tr="metric_2_label">Avg. Days On Market</span>
+      </div>
+      <!-- Metric 3 -->
+      <div class="metric-card reveal reveal-up delay-2">
+        <span class="metric-num serif-font metallic-text" data-tr="metric_3_num">+18%</span>
+        <span class="metric-label" data-tr="metric_3_label">Average Price Premium</span>
+      </div>
+    </div>
+  </section>
 
-          <!-- Card 4: Exterior glass design (Large Right) -->
-          <div class="portfolio-card large-right scroll-reveal" id="portfolio-4">
-            <div class="portfolio-badge">Staged &amp; Sold | Estate</div>
-            <div class="portfolio-media-wrapper">
-              <img class="portfolio-image" src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1000" alt="Luxury villa architectural facade staging" loading="lazy" />
-              <div class="portfolio-overlay">
-                <span class="portfolio-type">Super-Prime Mansion</span>
-                <h3 class="portfolio-name">The Glass Pavilion</h3>
-                <div class="portfolio-meta-grid">
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Total Area</span>
-                    <span class="portfolio-meta-val">12,500 Sq. Ft.</span>
-                  </div>
-                  <div class="portfolio-meta-item">
-                    <span class="portfolio-meta-label">Result</span>
-                    <span class="portfolio-meta-val">Sellers Premium +18%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+  <!-- ==========================================
+       4. ABOUT SECTION
+       ========================================== -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      
+      <!-- Visual with Double-Frame Styling -->
+      <div class="about-visual reveal reveal-left">
+        <div class="about-frame">
+          <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=1200&q=80" alt="Ar. Alina Nazish designing a luxury villa layout" class="about-img">
         </div>
       </div>
-    </section>
 
-    <!-- 5. TESTIMONIALS SECTION -->
-    <section id="section-reviews">
-      <div class="container" id="reviews-container">
-        <div class="section-title-wrapper scroll-reveal">
-          <div class="section-subtitle">Real Estate Impact</div>
-          <h2 class="section-title">Endorsements</h2>
+      <!-- Strategic Narrative Content -->
+      <div class="about-content reveal reveal-right">
+        <span class="uppercase-sans section-tag" data-tr="about_tag">The Designer & Planner</span>
+        <h2 class="section-title" data-tr="about_title">Design as a Strategic Financial Catalyst</h2>
+        <p class="about-lead" data-tr="about_lead">
+          "We do not merely furnish premium spaces; we systematically elevate their market velocity and perceived value."
+        </p>
+        <div class="about-text">
+          <p data-tr="about_p1">
+            Ar. Alina Nazish is a visionary architect and interior planner specializing in ultra-luxury property transformations. Recognizing that 90% of buyers decide on premium properties based on emotional resonance, she bridges the gap between sophisticated architectural design and high-speed real estate sales.
+          </p>
+          <p data-tr="about_p2">
+            Every villa and luxury penthouse curated under the <strong>naz by nazish</strong> banner is strategically tailored to appeal directly to ultra-high-net-worth investors, ensuring the space is perceived as an absolute sanctuary from the very first walkthrough.
+          </p>
         </div>
+        
+        <!-- Professional Credentials & Signature -->
+        <div class="about-credentials">
+          <span class="signature">Alina Nazish</span>
+          <div class="credentials-text">
+            <h4>Ar. Alina Nazish</h4>
+            <p data-tr="about_signature_title">Principal Architect, Designer & Strategic Planner</p>
+          </div>
+        </div>
+      </div>
 
-        <div id="reviews-grid">
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. PORTFOLIO SECTION (ASYMMETRIC GRID)
+       ========================================== -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      
+      <!-- Header with Description -->
+      <div class="portfolio-header reveal reveal-up">
+        <div>
+          <span class="uppercase-sans section-tag" data-tr="portfolio_tag">Recent Closures</span>
+          <h2 class="section-title" data-tr="portfolio_title">Staged & Sold Portfolio</h2>
+        </div>
+        <p class="portfolio-desc" data-tr="portfolio_desc">
+          Explore our record-breaking transformations across Dubai's most prestigious postcodes. Every property displayed was redesign-engineered and sold significantly ahead of market averages.
+        </p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="portfolio-filters reveal reveal-up">
+        <button class="filter-btn active" data-filter="all" data-tr="filter_all">All Projects</button>
+        <button class="filter-btn" data-filter="living" data-tr="filter_living">Living Rooms</button>
+        <button class="filter-btn" data-filter="bedroom" data-tr="filter_bedroom">Bedrooms</button>
+        <button class="filter-btn" data-filter="kitchen" data-tr="filter_kitchen">Kitchen & Dining</button>
+      </div>
+
+      <!-- Asymmetrical Grid Gallery -->
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. CUSTOMER REVIEWS (TESTIMONIALS)
+       ========================================== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      
+      <!-- Testimonials Carousel -->
+      <div class="testimonial-slider reveal reveal-up">
+        <div class="testimonial-track" id="testimonial-track">
           
           <!-- Testimonial 1 -->
-          <div class="review-card scroll-reveal" id="review-1">
-            <span class="review-quote-icon">“</span>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">
-              "We had an empty luxury duplex Jumeirah apartment lingering on the market for four months. Alina staged it with structural clarity and metallic accents. We received three competing premium cash offers within nine days of re-listing."
+          <div class="testimonial-slide active">
+            <span class="quote-mark">“</span>
+            <p class="testimonial-text" data-tr="t1_text">
+              "We struggled to sell our Palm Jumeirah villa for five months. Alina came in, completely replanned the spatial flow, styled it with incredible silver metallic accents, and we closed the sale 12 days later at 18% over our target. Absolute genius."
             </p>
-            <div class="review-author-box">
-              <h4 class="review-author-name">Maximilian Vance</h4>
-              <span class="review-author-title">Partner, Prestige Horizon Realty</span>
+            <div class="testimonial-author-wrapper">
+              <span class="testimonial-author" data-tr="t1_author">Youssef Al-Mansoori</span>
+              <span class="testimonial-author-title" data-tr="t1_title">Ultra-Luxury Property Owner</span>
             </div>
           </div>
 
           <!-- Testimonial 2 -->
-          <div class="review-card scroll-reveal" id="review-2">
-            <span class="review-quote-icon">“</span>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">
-              "Alina Nazish doesn't just design rooms; she stages high-ticket narratives. Property walkthroughs felt completely different post-transformation. Buyers were immediately captivated by the luxury atmosphere. Sold at a record 24% premium."
+          <div class="testimonial-slide">
+            <span class="quote-mark">“</span>
+            <p class="testimonial-text" data-tr="t2_text">
+              "Alina’s design is an indispensable asset in our marketing suite. Listings designed by 'naz by nazish' sell average 3 times faster than standard luxury listings. Her spatial designs create immediate, competitive bidder environments."
             </p>
-            <div class="review-author-box">
-              <h4 class="review-author-name">Seraphina Sterling</h4>
-              <span class="review-author-title">Owner, The Jumeirah Mansion Group</span>
+            <div class="testimonial-author-wrapper">
+              <span class="testimonial-author" data-tr="t2_author">Elena Rostova</span>
+              <span class="testimonial-author-title" data-tr="t2_title">Senior Broker, Luxury Sotheby's Dubai</span>
             </div>
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="review-card scroll-reveal" id="review-3">
-            <span class="review-quote-icon">“</span>
-            <div class="review-rating">★★★★★</div>
-            <p class="review-text">
-              "Our agency partners strictly with Ar. Alina Nazish for all super-prime developer listings. Her understanding of space planning, luxury lighting, and sales velocity is a powerful commercial multiplier. Highest recommendations."
+          <div class="testimonial-slide">
+            <span class="quote-mark">“</span>
+            <p class="testimonial-text" data-tr="t3_text">
+              "An extraordinary visual planner. Alina doesn't just stage properties; she curate emotional narratives. The monochromatic design theme she implemented in our Marina Penthouse felt so expensive and complete that the buyer bought it fully furnished."
             </p>
-            <div class="review-author-box">
-              <h4 class="review-author-name">Tariq Al-Mansoori</h4>
-              <span class="review-author-title">Managing Director, Al-Mansoori Estates</span>
+            <div class="testimonial-author-wrapper">
+              <span class="testimonial-author" data-tr="t3_author">Marcus Sterling</span>
+              <span class="testimonial-author-title" data-tr="t3_title">Real Estate Investment Fund Partner</span>
             </div>
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- 6. FAQ SECTION (Accordion dropdown) -->
-    <section id="section-faq">
-      <div class="container" id="faq-container">
-        <div class="section-title-wrapper scroll-reveal">
-          <div class="section-subtitle">Frequent Queries</div>
-          <h2 class="section-title">Design Intel</h2>
-        </div>
-
-        <div id="faq-list-container">
-          
-          <!-- FAQ 1 -->
-          <div class="faq-accordion-item scroll-reveal" id="faq-1">
-            <details>
-              <summary>
-                <span>How does luxury architectural staging boost the final sale price?</span>
-                <span class="faq-icon-indicator" aria-hidden="true"></span>
-              </summary>
-              <div class="faq-content-wrapper">
-                <p>
-                  High-net-worth buyers do not purchase raw square footage; they invest in an emotional identity. Outdated finishes or blank walls create mental friction, encouraging lowball offers or prolonged consideration. By transforming critical areas into high-concept luxury living lounges with silver-chrome highlights and perfect spatial layout, we remove holding-period doubts and validate premium asking figures.
-                </p>
-              </div>
-            </details>
-          </div>
-
-          <!-- FAQ 2 -->
-          <div class="faq-accordion-item scroll-reveal" id="faq-2">
-            <details>
-              <summary>
-                <span>What is the average timeline for styling a high-end villa?</span>
-                <span class="faq-icon-indicator" aria-hidden="true"></span>
-              </summary>
-              <div class="faq-content-wrapper">
-                <p>
-                  We prioritize commercial speed to avoid holding-period losses. Consultation and custom spatial curation plans require 5-7 days. Installation, precise styling adjustments, art placement, and architectural lighting configurations are completed within a structured 3-4 days to ensure your property hits the premium market immediately.
-                </p>
-              </div>
-            </details>
-          </div>
-
-          <!-- FAQ 3 -->
-          <div class="faq-accordion-item scroll-reveal" id="faq-3">
-            <details>
-              <summary>
-                <span>Do you work with existing furniture, or only empty spaces?</span>
-                <span class="faq-icon-indicator" aria-hidden="true"></span>
-              </summary>
-              <div class="faq-content-wrapper">
-                <p>
-                  Both. We analyze the existing assets on their architectural merit. If structural items fit the ultimate premium aesthetic, we integrate and upgrade them using professional staging curation. In empty villas or premium shells, we curate and install entire luxury layouts from our exclusive designer catalog.
-                </p>
-              </div>
-            </details>
-          </div>
-
-          <!-- FAQ 4 -->
-          <div class="faq-accordion-item scroll-reveal" id="faq-4">
-            <details>
-              <summary>
-                <span>Can property buyers purchase the staged furniture permanently?</span>
-                <span class="faq-icon-indicator" aria-hidden="true"></span>
-              </summary>
-              <div class="faq-content-wrapper">
-                <p>
-                  Absolutely. Over 65% of our staging transformations are purchased lock, stock, and barrel by the ultimate buyer. We provide transparent package valuations for the entirety of the curated high-end pieces, transforming staging into an effortless, move-in-ready premium sales argument.
-                </p>
-              </div>
-            </details>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. FOOTER & CONTACT SECTION -->
-    <footer id="site-footer">
-      <div class="container" id="footer-container">
-        
-        <!-- Large Interactive CTA Card -->
-        <div id="footer-cta-card" class="scroll-reveal" id="section-contact">
-          <span id="footer-cta-subtitle">Begin Your Spatial Transformation</span>
-          <h2 id="footer-cta-headline">Ready to maximize your listing's sales value?</h2>
-          <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer" class="whatsapp-button-large" id="footer-whatsapp-btn">
-            <!-- Inline WhatsApp SVG Icon -->
-            <svg viewBox="0 0 448 512" fill="currentColor">
-              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        <!-- Custom Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-arrow" id="prev-btn" aria-label="Previous testimonial">
+            <!-- Inline left arrow svg -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
-            <span>Initiate WhatsApp Consult</span>
-          </a>
+          </button>
+          <div class="slider-dots" id="dots-container">
+            <!-- Generated dynamically by JS, but keeping placeholders for baseline styling -->
+            <button class="slider-dot active" aria-label="Go to slide 1"></button>
+            <button class="slider-dot" aria-label="Go to slide 2"></button>
+            <button class="slider-dot" aria-label="Go to slide 3"></button>
+          </div>
+          <button class="slider-arrow" id="next-btn" aria-label="Next testimonial">
+            <!-- Inline right arrow svg -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================== -->
+  <section id="faq" class="faq">
+    <div class="container faq-layout">
+      
+      <!-- FAQ Left Intro column -->
+      <div class="faq-intro reveal reveal-left">
+        <span class="uppercase-sans section-tag" data-tr="faq_tag">Methodology & Strategy</span>
+        <h2 class="section-title" data-tr="faq_title">The Blueprint of Acceleration</h2>
+        <p class="portfolio-desc" style="margin-top: 1.5rem;" data-tr="faq_desc">
+          We understand that transforming a luxury asset is a calculated business investment. Learn how Ar. Alina Nazish optimizes architectural psychology to maximize buyer transaction speed and property valuation.
+        </p>
+      </div>
+
+      <!-- FAQ Accordion column -->
+      <div class="faq-accordion reveal reveal-right">
+        
+        <!-- Accordion Item 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question" data-tr="faq_q1">How does professional design accelerate high-end property transactions?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner" data-tr="faq_a1">
+              90% of prospective ultra-high-net-worth buyers cannot visualize the full potential of an empty or poorly structured space. A strategic, bespoke design by <strong>naz by nazish</strong> establishes a highly luxurious, ready-to-move-in sensory environment that triggers an immediate psychological connection, eliminating listing hesitation and speeding up offers by up to 300%.
+            </div>
+          </div>
         </div>
 
-        <!-- Footer Grid Columns -->
-        <div id="footer-brand-grid">
+        <!-- Accordion Item 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question" data-tr="faq_q2">What is the average timeline for an architectural transformation?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner" data-tr="faq_a2">
+              Time is capital, and every day a listing is unclosed incurs massive opportunity costs. Depending on the scale and complexity of the villa or apartment, our standard strategic transformations are completed within 2 to 4 weeks. This includes architectural replanning, bespoke furniture curation, lighting styling, and final visual detailing.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question" data-tr="faq_q3">Do you curate both luxury villas and penthouses?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner" data-tr="faq_a3">
+              Yes. We design and plan custom architectural flows for expansive seaside villas, estate entrances, and ultra-high-end city penthouses and apartments. Each project receives a entirely customized visual system (such as our iconic Monochromatic Black and Silver or White and Rose Gold profiles) depending on the property's layout and target buyer demographic.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question" data-tr="faq_q4">How are services priced, and what is the expected ROI?</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-content-inner" data-tr="faq_a4">
+              Pricing is bespoke, tailored to the square footage and tier of intervention required. On average, our architectural styling and staging assets generate a 300% to 500% ROI for the owner. Properties not only close 3x faster, but they also command an average 15% to 18% closed-price premium over unstaged comparable listings in the same sector.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. CONTACT & FOOTER SECTION
+       ========================================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      
+      <!-- Call to Action layout -->
+      <div class="contact-layout reveal reveal-up">
+        <div class="contact-badge">
+          <span class="uppercase-sans section-tag metallic-text" data-tr="contact_tag">Secure Your Competitive Edge</span>
+        </div>
+        <h2 class="contact-headline serif-font" data-tr="contact_headline">
+          Let’s Accelerate Your Listing's Capital Potential.
+        </h2>
+        <p class="contact-desc" data-tr="contact_desc">
+          Schedule a private walk-through or request a strategic design consultation directly with Ar. Alina Nazish via WhatsApp.
+        </p>
+        <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp" style="padding: 1.3rem 3.5rem; font-size: 0.9rem;" id="contact-cta-whatsapp">
+          <svg viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.503-5.714-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.79 1.978 14.317.954 11.7.954c-5.438 0-9.863 4.37-9.867 9.8c-.001 1.74.475 3.442 1.381 4.966L2.185 20.89l5.462-1.736zM17.96 15.02c-.287-.144-1.7-.84-1.962-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.128-.168.192-.336.216-.624.072-.288-.144-1.216-.448-2.316-1.432-.856-.764-1.433-1.708-1.6-2-.168-.288-.018-.444.126-.587.13-.13.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.233-.561-.469-.485-.648-.494-.168-.008-.36-.01-.552-.01s-.504.072-.768.36c-.264.288-1.008.984-1.008 2.4s1.032 2.784 1.176 2.976c.144.192 2.032 3.102 4.92 4.35.687.297 1.224.476 1.643.608.69.219 1.318.188 1.815.114.553-.082 1.7-.696 1.942-1.368.243-.672.243-1.248.17-1.368-.073-.12-.265-.216-.553-.36z"/>
+          </svg>
+          <span data-tr="contact_cta">Direct Consultation via WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Footer navigation, details, address -->
+      <footer>
+        <div class="footer-grid">
           
-          <div class="footer-column-brand" id="footer-col-1">
-            <span class="footer-brand-text">naz</span>
-            <span class="footer-brand-sub">by Ar. Alina Nazish</span>
-            <p class="footer-brand-pitch">
-              Strategically elevating luxury real estate value through high-contrast minimalist architectural interior staging.
+          <!-- Column 1: Brand -->
+          <div class="footer-col">
+            <span class="logo-main" style="font-size: 1.3rem; margin-bottom: 0.8rem;">naz by nazish</span>
+            <span class="logo-sub" style="font-size: 0.58rem; margin-bottom: 1.5rem;">by Ar. Alina Nazish</span>
+            <p class="footer-text" style="max-width: 280px;" data-tr="footer_brand_desc">
+              Bespoke architectural interventions and luxury interior staging engineered to maximize transaction value and speed for elite residences.
             </p>
           </div>
 
-          <div class="footer-column-links" id="footer-col-2">
-            <h4 class="footer-column-title">Explore</h4>
-            <ul class="footer-links-list">
-              <li class="footer-link-item"><a href="#section-hero">Home</a></li>
-              <li class="footer-link-item"><a href="#section-about">About Alina</a></li>
-              <li class="footer-link-item"><a href="#section-portfolio">Selected Works</a></li>
-              <li class="footer-link-item"><a href="#section-faq">FAQ Curation</a></li>
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-col">
+            <h3 data-tr="footer_explore">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="#home" data-tr="nav_home">Home</a></li>
+              <li><a href="#about" data-tr="nav_about">About</a></li>
+              <li><a href="#portfolio" data-tr="nav_portfolio">Portfolio</a></li>
+              <li><a href="#faq" data-tr="nav_faq">FAQ</a></li>
+              <li><a href="#contact" data-tr="nav_contact">Contact</a></li>
             </ul>
           </div>
 
-          <div class="footer-column-links" id="footer-col-3">
-            <h4 class="footer-column-title">Direct Link</h4>
-            <ul class="footer-links-list">
-              <li class="footer-link-item">
-                <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer">Consultation Office</a>
-              </li>
-              <li class="footer-link-item">
-                <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer">Property Assessment</a>
-              </li>
-              <li class="footer-link-item">
-                <a href="#section-reviews">Real Estate Endorsements</a>
-              </li>
-            </ul>
+          <!-- Column 3: Professional Contacts -->
+          <div class="footer-col">
+            <h3 data-tr="footer_atelier">The Atelier</h3>
+            <div class="footer-contact-info">
+              <div class="footer-info-item">
+                <span data-tr="footer_inquiries">Inquiries & Booking</span>
+                <a href="https://wa.me/971563092692" target="_blank" rel="noopener noreferrer">+971 56 309 2692</a>
+              </div>
+              <div class="footer-info-item">
+                <span data-tr="footer_email_label">Direct Email</span>
+                <a href="mailto:ar.khan.alina@gmail.com">ar.khan.alina@gmail.com</a>
+              </div>
+              <div class="footer-info-item">
+                <span data-tr="footer_loc_label">Location</span>
+                <p class="footer-text" style="font-size: 0.95rem; color: var(--text-primary); font-family: var(--font-serif);" data-tr="footer_loc_val">Dubai Design District (d3), UAE</p>
+              </div>
+            </div>
           </div>
 
         </div>
 
-        <!-- Copyright & Instagram Social -->
-        <div id="footer-bottom-bar">
-          <span id="copyright-text">
-            &copy; 2026 naz by nazish. All Rights Reserved. Architectural Credentials &amp; Planning Strategy.
+        <!-- Copyright and Professional Credentials -->
+        <div class="footer-bottom">
+          <span class="footer-copy" data-tr="footer_copy">
+            &copy; 2026 naz by nazish. All architectural and artistic rights reserved. Styled by Ar. Alina Nazish.
           </span>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" id="instagram-link" title="Follow Ar. Alina Nazish on Instagram">
-            <!-- Inline Instagram SVG -->
-            <svg viewBox="0 0 448 512" fill="currentColor">
-              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8c14.8 0 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-            </svg>
-            <span>Instagram</span>
-          </a>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">Instagram</a>
+            <span style="color: var(--text-muted)">|</span>
+            <span class="footer-social-link" style="cursor: default;">LinkedIn</span>
+          </div>
         </div>
+      </footer>
 
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- LIGHTWEIGHT NATIVE CONTROLLER SCRIPT -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        
-        // --- 1. Sticky Navigation Blur Effect ---
-        const header = document.getElementById('site-header');
-        window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-          } else {
-            header.classList.remove('scrolled');
-          }
-        });
+  <!-- ==========================================
+       VANILLA JAVASCRIPT MECHANICS
+       ========================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
-        // --- 2. Mobile Nav Burger Toggle ---
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
+      // --- 0. MULTILINGUAL TRANSLATION LOGIC ---
+      const translations = {
+        en: {
+          logo_title: "naz by nazish",
+          nav_home: "Home",
+          nav_about: "About",
+          nav_portfolio: "Portfolio",
+          nav_faq: "FAQ",
+          nav_contact: "Contact",
+          lang_selector_label: "Select Language",
+          hero_label: "Luxury Property Acceleration",
+          hero_title: "Transforming <br> <span class=\"italic-serif italic\">Prime Real Estate</span> <br> <span class=\"metallic-text\">3x Faster.</span>",
+          hero_desc: "We engineer high-end architectural aesthetics and bespoke interior staging for elite apartments and villas in Dubai. Designed to stimulate rapid emotional value and trigger immediate, premium offers.",
+          cta_whatsapp: "Consult on WhatsApp",
+          cta_showcase: "View Showcase",
+          before_label: "Before",
+          after_label: "After Redesign",
+          drag_instructions: "&larr; Drag Slider to Compare &rarr;",
+          metric_1_num: "3x",
+          metric_1_label: "Faster Sales Cycle",
+          metric_2_num: "14",
+          metric_2_label: "Avg. Days On Market",
+          metric_3_num: "+18%",
+          metric_3_label: "Average Price Premium",
+          about_tag: "The Designer & Planner",
+          about_title: "Design as a Strategic Financial Catalyst",
+          about_lead: "\"We do not merely furnish premium spaces; we systematically elevate their market velocity and perceived value.\"",
+          about_p1: "Ar. Alina Nazish is a visionary architect and interior planner specializing in ultra-luxury property transformations. Recognizing that 90% of buyers decide on premium properties based on emotional resonance, she bridges the gap between sophisticated architectural design and high-speed real estate sales.",
+          about_p2: "Every villa and luxury penthouse curated under the <strong>naz by nazish</strong> banner is strategically tailored to appeal directly to ultra-high-net-worth investors, ensuring the space is perceived as an absolute sanctuary from the very first walkthrough.",
+          about_signature_title: "Principal Architect, Designer & Strategic Planner",
+          portfolio_tag: "Recent Closures",
+          portfolio_title: "Staged & Sold Portfolio",
+          portfolio_desc: "Explore our record-breaking transformations across Dubai's most prestigious postcodes. Every property displayed was redesign-engineered and sold significantly ahead of market averages.",
+          p1_badge: "Signature Living",
+          p1_impact: "Sold in 11 Days",
+          p1_title: "Palm Jumeirah Sanctuary",
+          p1_loc: "Palm Jumeirah, Dubai",
+          p2_badge: "Penthouse Suite",
+          p2_impact: "Sold +16% Above Ask",
+          p2_title: "The Master Sanctuary",
+          p2_loc: "Downtown Dubai, UAE",
+          p3_badge: "Bespoke Kitchen",
+          p3_impact: "Closed in 9 Days",
+          p3_title: "Monochromatic Culinary",
+          p3_loc: "Dubai Marina Penthouse",
+          p4_badge: "Executive Study",
+          p4_impact: "Closed Over Ask",
+          p4_title: "The Executive Lounge",
+          p4_loc: "DIFC Residency, Dubai",
+          p5_badge: "Bespoke Entryways",
+          p5_impact: "Staged & Closed",
+          p5_title: "Emirates Hills Majesty",
+          p5_loc: "Emirates Hills, Dubai",
+          p6_badge: "Bespoke Dining",
+          p6_impact: "Sold in 14 Days",
+          p6_title: "Jumeirah Golf Estates",
+          p6_loc: "Golf Estates, Dubai",
+          p7_badge: "Partition Design",
+          p7_impact: "Closed in 18 Days",
+          p7_title: "Royal Penthouse Division",
+          p7_loc: "Dubai Marina, UAE",
+          p8_badge: "Luxury Bedroom",
+          p8_impact: "Sold +20% Above Ask",
+          p8_title: "Dubai Hills Haven",
+          p8_loc: "Dubai Hills, Dubai",
+          p9_badge: "Media Room",
+          p9_impact: "Sold in 15 Days",
+          p9_title: "Marble Media Suite",
+          p9_loc: "Downtown Dubai",
+          p10_badge: "Dining Room",
+          p10_impact: "Closed in 18 Days",
+          p10_title: "Minimalist Dining Suite",
+          p10_loc: "Dubai Marina, UAE",
+          p11_badge: "Bespoke Bedroom",
+          p11_impact: "Staged & Sold",
+          p11_title: "Arch Headboard Suite",
+          p11_loc: "Palm Jumeirah",
+          p12_badge: "Bespoke Kitchen",
+          p12_impact: "Staged & Closed",
+          p12_title: "Dark Marble Culinary",
+          p12_loc: "Emirates Hills",
+          p13_badge: "Kitchen Pantry",
+          p13_impact: "Sold in 15 Days",
+          p13_title: "Warm Wood Kitchen",
+          p13_loc: "Jumeirah, Dubai",
+          p14_badge: "Luxury Lounge",
+          p14_impact: "Sold in 10 Days",
+          p14_title: "Blue Haven Lounge",
+          p14_loc: "Dubai Hills, Dubai",
+          p15_badge: "Media Lounge",
+          p15_impact: "Closed Over Ask",
+          p15_title: "Marble Media Lounge",
+          p15_loc: "DIFC Residency, Dubai",
+          p16_badge: "Feature Design",
+          p16_impact: "Closed Over Ask",
+          p16_title: "Fluted Feature Room",
+          p16_loc: "DIFC Residency, Dubai",
+          p17_badge: "Bespoke Kitchen",
+          p17_impact: "Closed in 12 Days",
+          p17_title: "Monochromatic Dining",
+          p17_loc: "Palm Jumeirah",
+          p18_badge: "Bespoke Dining",
+          p18_impact: "Sold in 8 Days",
+          p18_title: "Contemporary Dining",
+          p18_loc: "Dubai Design District",
+          filter_all: "All Projects",
+          filter_living: "Living Rooms",
+          filter_bedroom: "Bedrooms",
+          filter_kitchen: "Kitchen & Dining",
+          t1_text: "\"We struggled to sell our Palm Jumeirah villa for five months. Alina came in, completely replanned the spatial flow, styled it with incredible silver metallic accents, and we closed the sale 12 days later at 18% over our target. Absolute genius.\"",
+          t1_author: "Youssef Al-Mansoori",
+          t1_title: "Ultra-Luxury Property Owner",
+          t2_text: "\"Alina’s design is an indispensable asset in our marketing suite. Listings designed by 'naz by nazish' sell average 3 times faster than standard luxury listings. Her spatial designs create immediate, competitive bidder environments.\"",
+          t2_author: "Elena Rostova",
+          t2_title: "Senior Broker, Luxury Sotheby's Dubai",
+          t3_text: "\"An extraordinary visual planner. Alina doesn't just stage properties; she curate emotional narratives. The monochromatic design theme she implemented in our Marina Penthouse felt so expensive and complete that the buyer bought it fully furnished.\"",
+          t3_author: "Marcus Sterling",
+          t3_title: "Real Estate Investment Fund Partner",
+          faq_tag: "Methodology & Strategy",
+          faq_title: "The Blueprint of Acceleration",
+          faq_desc: "We understand that transforming a luxury asset is a calculated business investment. Learn how Ar. Alina Nazish optimizes architectural psychology to maximize buyer transaction speed and property valuation.",
+          faq_q1: "How does professional design accelerate high-end property transactions?",
+          faq_a1: "90% of prospective ultra-high-net-worth buyers cannot visualize the full potential of an empty or poorly structured space. A strategic, bespoke design by <strong>naz by nazish</strong> establishes a highly luxurious, ready-to-move-in sensory environment that triggers an immediate psychological connection, eliminating listing hesitation and speeding up offers by up to 300%.",
+          faq_q2: "What is the average timeline for an architectural transformation?",
+          faq_a2: "Time is capital, and every day a listing is unclosed incurs massive opportunity costs. Depending on the scale and complexity of the villa or apartment, our standard strategic transformations are completed within 2 to 4 weeks. This includes architectural replanning, bespoke furniture curation, lighting styling, and final visual detailing.",
+          faq_q3: "Do you curate both luxury villas and penthouses?",
+          faq_a3: "Yes. We design and plan custom architectural flows for expansive seaside villas, estate entrances, and ultra-high-end city penthouses and apartments. Each project receives a entirely customized visual system (such as our iconic Monochromatic Black and Silver or White and Rose Gold profiles) depending on the property's layout and target buyer demographic.",
+          faq_q4: "How are services priced, and what is the expected ROI?",
+          faq_a4: "Pricing is bespoke, tailored to the square footage and tier of intervention required. On average, our architectural styling and staging assets generate a 300% to 500% ROI for the owner. Properties not only close 3x faster, but they also command an average 15% to 18% closed-price premium over unstaged comparable listings in the same sector.",
+          contact_tag: "Secure Your Competitive Edge",
+          contact_headline: "Let’s Accelerate Your Listing's Capital Potential.",
+          contact_desc: "Schedule a private walk-through or request a strategic design consultation directly with Ar. Alina Nazish via WhatsApp.",
+          contact_cta: "Direct Consultation via WhatsApp",
+          footer_brand_desc: "Bespoke architectural interventions and luxury interior staging engineered to maximize transaction value and speed for elite residences.",
+          footer_explore: "Explore",
+          footer_atelier: "The Atelier",
+          footer_inquiries: "Inquiries & Booking",
+          footer_email_label: "Direct Email",
+          footer_loc_label: "Location",
+          footer_loc_val: "Dubai Design District (d3), UAE",
+          footer_copy: "&copy; 2026 naz by nazish. All architectural and artistic rights reserved. Styled by Ar. Alina Nazish.",
+          try_own_project: "Custom Project Preview",
+          customizer_desc: "Test your own space in our premium interactive slider (or drag & drop files directly onto the slider)",
+          btn_upload_before: "Load Before Photo",
+          btn_upload_after: "Load After Photo",
+          no_file_selected: "No file chosen",
+          reset_default_photos: "Reset to Default Gallery"
+        },
+        ar: {
+          logo_title: "ناز باي نازش",
+          nav_home: "الرئيسية",
+          nav_about: "من نحن",
+          nav_portfolio: "أعمالنا",
+          nav_faq: "الأسئلة الشائعة",
+          nav_contact: "اتصل بنا",
+          lang_selector_label: "اختر اللغة",
+          hero_label: "تسريع بيع العقارات الفاخرة",
+          hero_title: "تحويل <br> <span class=\"italic-serif italic\">العقارات النخبوية</span> <br> <span class=\"metallic-text\">بـ ٣ أضعاف السرعة.</span>",
+          hero_desc: "نحن نهندس الجماليات المعمارية الراقية والتجهيز الداخلي المخصص للشقق والفيلات الفاخرة في دبي. مصمم لتحفيز القيمة العاطفية السريعة والحصول على عروض فورية ومميزة.",
+          cta_whatsapp: "استشر عبر واتساب",
+          cta_showcase: "عرض المعرض",
+          before_label: "قبل",
+          after_label: "بعد إعادة التصميم",
+          drag_instructions: "&larr; اسحب المنزلق للمقارنة &rarr;",
+          metric_1_num: "٣ أضعاف",
+          metric_1_label: "دورة مبيعات أسرع",
+          metric_2_num: "١٤",
+          metric_2_label: "متوسط الأيام في السوق",
+          metric_3_num: "+١٨٪",
+          metric_3_label: "متوسط علاوة السعر",
+          about_tag: "المصممة والمخططة",
+          about_title: "التصميم كمحفز مالي استراتيجي",
+          about_lead: "\"نحن لا نؤثث المساحات الفاخرة فحسب، بل نرفع بشكل منهجي من سرعة بيعها وقيمتها المتصورة.\"",
+          about_p1: "المهندسة المعمارية ألينا نازيش هي مصممة ومخططة داخلية ذات رؤية متخصصة في تحويل العقارات فائقة الفخامة. وإدراكًا منها لأن 90% من المشترين يقررون شراء العقارات الفاخرة بناءً على الرنين العاطفي، فإنها تسد الفجوة بين التصميم المعماري المتطور ومبيعات العقارات السريعة.",
+          about_p2: "كل فيلا وبنتهاوس فاخر يتم تنسيقه تحت شعار <strong>naz by nazish</strong> مصمم استراتيجيًا ليجذب مباشرة المستثمرين من ذوي الملاءة المالية العالية للغاية، مما يضمن إدراك المساحة كملاذ مطلق من الجولة الأولى.",
+          about_signature_title: "المهندسة المعمارية الرئيسية، المصممة والمخططة الاستراتيجية",
+          portfolio_tag: "الصفقات الأخيرة المغلقة",
+          portfolio_title: "معرض العقارات المجهزة والمباعة",
+          portfolio_desc: "استكشف التحولات القياسية التي حققناها في أرقى الرموز البريدية في دبي. كل عقار معروض تم هندسته وتصميمه وبيعه قبل متوسطات السوق بكثير.",
+          p1_badge: "صالون فاخر",
+          p1_impact: "بيعت في ١١ يوماً",
+          p1_title: "ملاذ نخلة جميرا",
+          p1_loc: "نخلة جميرا، دبي",
+          p2_badge: "جناح البنتهاوس",
+          p2_impact: "بيع بـ +١٦٪ فوق المطلوب",
+          p2_title: "الجناح الرئيسي الفاخر",
+          p2_loc: "وسط مدينة دبي، الإمارات",
+          p3_badge: "مطبخ مخصص",
+          p3_impact: "تم الإغلاق في ٩ أيام",
+          p3_title: "مطبخ أحادي اللون",
+          p3_loc: "بنتهاوس دبي مارينا",
+          p4_badge: "مكتب تنفيذي",
+          p4_impact: "أغلق بأكثر من المطلوب",
+          p4_title: "ردهة التنفيذيين",
+          p4_loc: "مركز دبي المالي العالمي، دبي",
+          p5_badge: "مداخل فاخرة",
+          p5_impact: "تم التجهيز والبيع",
+          p5_title: "مهابة تلال الإمارات",
+          p5_loc: "تلال الإمارات، دبي",
+          p6_badge: "غرفة طعام مميزة",
+          p6_impact: "بيعت في ١٤ يوماً",
+          p6_title: "عقارات جميرا للغولف",
+          p6_loc: "عقارات الغولف، دبي",
+          p7_badge: "حواجز فنية",
+          p7_impact: "تم البيع في ١٨ يوماً",
+          p7_title: "التقسيم الملكي للبنتهاوس",
+          p7_loc: "مرسى دبي، الإمارات",
+          p8_badge: "غرفة نوم فاخرة",
+          p8_impact: "بيعت بـ +٢٠٪ فوق المطلوب",
+          p8_title: "ملاذ دبي هيلز",
+          p8_loc: "دبي هيلز، دبي",
+          p9_badge: "غرفة الميديا",
+          p9_impact: "بيعت في ١٥ يوماً",
+          p9_title: "جناح الميديا الرخامي",
+          p9_loc: "وسط مدينة دبي",
+          p10_badge: "غرفة طعام",
+          p10_impact: "أغلقت في ١٨ يوماً",
+          p10_title: "جناح الطعام البسيط",
+          p10_loc: "مرسى دبي، الإمارات",
+          p11_badge: "غرفة نوم مخصصة",
+          p11_impact: "تم التجهيز والبيع",
+          p11_title: "جناح السرير المقوس",
+          p11_loc: "نخلة جميرا",
+          p12_badge: "مطبخ مخصص",
+          p12_impact: "تم التجهيز والإغلاق",
+          p12_title: "مطبخ الرخام الداكن",
+          p12_loc: "تلال الإمارات",
+          p13_badge: "مخزن المطبخ",
+          p13_impact: "بيعت في ١٥ يوماً",
+          p13_title: "مطبخ الخشب الدافئ",
+          p13_loc: "جميرا، دبي",
+          p14_badge: "ردهة فاخرة",
+          p14_impact: "بيعت في ١٠ أيام",
+          p14_title: "ردهة الملاذ الأزرق",
+          p14_loc: "دبي هيلز، دبي",
+          p15_badge: "ردهة الميديا",
+          p15_impact: "أغلقت فوق المطلوب",
+          p15_title: "ردهة الميديا الرخامية",
+          p15_loc: "مركز دبي المالي العالمي",
+          p16_badge: "تصميم مميز",
+          p16_impact: "أغلقت فوق المطلوب",
+          p16_title: "الغرفة ذات الجدار المضلع",
+          p16_loc: "مركز دبي المالي العالمي",
+          p17_badge: "مطبخ مخصص",
+          p17_impact: "أغلقت في ١٢ يوماً",
+          p17_title: "غرفة الطعام أحادية اللون",
+          p17_loc: "نخلة جميرا",
+          p18_badge: "طعام مخصص",
+          p18_impact: "بيعت في ٨ أيام",
+          p18_title: "غرفة طعام معاصرة",
+          p18_loc: "حي دبي للتصميم",
+          filter_all: "جميع المشاريع",
+          filter_living: "غرف المعيشة",
+          filter_bedroom: "غرف النوم",
+          filter_kitchen: "المطابخ والطعام",
+          t1_text: "\"لقد كافحنا لبيع فيلتنا في نخلة جميرا لمدة خمسة أشهر. جاءت ألينا، وأعادت بالكامل تخطيط التدفق المكاني، وصممتها بلمسات معدنية فضية رائعة، وأغلقنا البيع بعد 12 يومًا بنسبة 18% فوق هدفنا. عبقرية مطلقة.\"",
+          t1_author: "يوسف المنصوري",
+          t1_title: "مالك عقارات فائقة الفخامة",
+          t2_text: "\"تصميم ألينا هو أصل لا غنى عنه في مجموعتنا التسويقية. العقارات المصممة بواسطة 'naz by nazish' تباع بمتوسط 3 مرات أسرع من العقارات الفاخرة العادية. تصاميمها المكانية تخلق بيئات مزايدة تنافسية وفورية.\"",
+          t2_author: "إيلينا روستوفا",
+          t2_title: "وسيط أول، ساوثبيز دبي للعقارات الفاخرة",
+          t3_text: "\"مخططة بصرية استثنائية. ألينا لا تقوم فقط بتجهيز العقارات؛ بل تصوغ روايات عاطفية. موضوع التصميم أحادي اللون الذي طبقته في بنتهاوس مارينا بدا باهظ الثمن ومتكاملاً لدرجة أن المشتري اشتراه مؤثثاً بالكامل.\"",
+          t3_author: "ماركوس ستيرلينغ",
+          t3_title: "شريك في صندوق الاستثمار العقاري",
+          faq_tag: "المنهجية والاستراتيجية",
+          faq_title: "مخطط التسريع",
+          faq_desc: "نحن نتفهم أن تحويل الأصول الفاخرة هو استثمار تجاري مدروس. تعرف على كيفية تحسين المهندسة ألينا نازيش لعلم النفس المعماري لزيادة سرعة معاملات المشتري وتقييم العقار.",
+          faq_q1: "كيف يعجل التصميم الاحترافي بمعاملات العقارات الفاخرة؟",
+          faq_a1: "90% من المشترين المحتملين من ذوي الملاءة المالية العالية للغاية لا يمكنهم تصور الإمكانات الكاملة لمساحة فارغة أو سيئة التخطيط. يؤسس التصميم الاستراتيجي والمخصص من <strong>naz by nazish</strong> بيئة حسية فاخرة للغاية وجاهزة للسكن تثير اتصالاً نفسياً فورياً، مما يلغي التردد ويسرع العروض بنسبة تصل إلى 300%.",
+          faq_q2: "ما هو متوسط الإطار الزمني للتحول المعماري؟",
+          faq_a2: "الوقت هو رأس المال، وكل يوم يبقى فيه العقار معروضاً دون إغلاق يتسبب في تكاليف فرص ضائعة هائلة. اعتماداً على حجم وتعقيد الفيلا أو الشقة، تكتمل تحولاتنا الاستراتيجية القياسية في غضون أسبوعين إلى 4 أسابيع. يشمل ذلك إعادة التخطيط المعماري وتنسيق الأثاث المخصص وتصميم الإضاءة والتفاصيل البصرية النهائية.",
+          faq_q3: "هل تقومين بتنسيق كل من الفيلات الفاخرة والبنتهاوس؟",
+          faq_a3: "نعم. نحن نصمم ونخطط التدفقات المعمارية المخصصة للفيلات الساحلية الواسعة، ومداخل العقارات، والشقق والبنتهاوس الفاخرة في المدينة. يتلقى كل مشروع نظاماً مرئياً مخصصاً بالكامل (مثل ملفاتنا الأيقونية أحادية اللون باللونين الأسود والفضي أو الأبيض والذهبي الوردي) اعتماداً على تخطيط العقار والديموغرافية المستهدفة للمشترين.",
+          faq_q4: "كيف يتم تسعير الخدمات، وما هو العائد المتوقع على الاستثمار؟",
+          faq_a4: "التسعير مخصص، ومصمم وفقاً للمساحة المربعة ومستوى التدخل المطلوب. في المتوسط، تحقق أصول التنسيق والتجهيز المعماري لدينا عائداً على الاستثمار يتراوح بين 300% إلى 500% للمالك. لا تغلق العقارات أسرع بـ 3 مرات فحسب، بل إنها تسجل أيضاً متوسط زيادة في السعر المغلق يتراوح بين 15% إلى 18% مقارنة بالعقارات المشابهة غير المجهزة في نفس القطاع.",
+          contact_tag: "ضمن ميزتك التنافسية",
+          contact_headline: "دعنا نسرع الإمكانات الرأسمالية لعقارك المعروض.",
+          contact_desc: "حدد موعداً لجولة خاصة أو اطلب استشارة تصميمية استراتيجية مباشرة مع المهندسة ألينا نازيش عبر واتساب.",
+          contact_cta: "استشارة مباشرة عبر واتساب",
+          footer_brand_desc: "تدخلات معمارية وتجهيز داخلي فاخر مخصص لتسريع الصفقات وتعظيم قيمتها للمساكن النخبوية.",
+          footer_explore: "استكشف",
+          footer_atelier: "المرسم",
+          footer_inquiries: "الاستفسارات والحجوزات",
+          footer_email_label: "البريد الإلكتروني المباشر",
+          footer_loc_label: "الموقع",
+          footer_loc_val: "حي دبي للتصميم (d3)، الإمارات العربية المتحدة",
+          footer_copy: "&copy; ٢٠٢٦ ناز باي نازش. جميع الحقوق المعمارية والفنية محفوظة. تصميم وتنسيق المهندسة ألينا نازيش.",
+          try_own_project: "معاينة مشروعك الخاص",
+          customizer_desc: "اختبر مساحتك الخاصة في منزلقنا التفاعلي المميز (أو اسحب وأسقط الملفات مباشرة على المنزلق)",
+          btn_upload_before: "تحميل صورة قبل",
+          btn_upload_after: "تحميل صورة بعد",
+          no_file_selected: "لم يتم اختيار ملف",
+          reset_default_photos: "إعادة التعيين إلى المعرض الافتراضي"
+        },
+        ru: {
+          logo_title: "naz by nazish",
+          nav_home: "Главная",
+          nav_about: "О нас",
+          nav_portfolio: "Портфолио",
+          nav_faq: "Вопросы",
+          nav_contact: "Контакты",
+          lang_selector_label: "Выбрать язык",
+          hero_label: "Ускорение продаж элитной недвижимости",
+          hero_title: "Преображаем <br> <span class=\"italic-serif italic\">первоклассное жилье</span> <br> <span class=\"metallic-text\">в 3 раза быстрее.</span>",
+          hero_desc: "Мы создаем высококлассную архитектурную эстетику и эксклюзивный интерьерный стайлинг для элитных апартаментов и вилл в Дубае. Спроектировано для мгновенного эмоционального отклика и быстрых премиальных предложений.",
+          cta_whatsapp: "Консультация в WhatsApp",
+          cta_showcase: "Смотреть работы",
+          before_label: "До",
+          after_label: "После редизайна",
+          drag_instructions: "&larr; Перемещайте слайдер для сравнения &rarr;",
+          metric_1_num: "3x",
+          metric_1_label: "Быстрее цикл продажи",
+          metric_2_num: "14",
+          metric_2_label: "Ср. дней на рынке",
+          metric_3_num: "+18%",
+          metric_3_label: "Средняя наценка к цене",
+          about_tag: "Архитектор и планировщик",
+          about_title: "Дизайн как стратегический финансовый катализатор",
+          about_lead: "\"Мы не просто обставляем премиальные пространства; мы систематически повышаем скорость их реализации и воспринимаемую ценность.\"",
+          about_p1: "Ар. Алина Назиш &mdash; дальновидный архитектор и дизайнер интерьеров, специализирующийся на трансформации ультрароскошной недвижимости. Понимая, что 90% покупателей выбирают жилье премиум-класса на основе эмоционального резонанса, она соединяет изысканный архитектурный дизайн и быстрые продажи.",
+          about_p2: "Каждая вилла и роскошный пентхаус, созданные под брендом <strong>naz by nazish</strong>, стратегически адаптированы под запросы сверхсостоятельных инвесторов, гарантируя ощущение абсолютного уединения и комфорта с самого первого визита.",
+          about_signature_title: "Главный архитектор, дизайнер и стратегический планировщик",
+          portfolio_tag: "Недавние сделки",
+          portfolio_title: "Портфолио готовых объектов",
+          portfolio_desc: "Посмотрите наши знаковые проекты в самых престижных районах Дубая. Каждый объект был подготовлен и реализован значительно быстрее среднерыночных показателей.",
+          p1_badge: "Роскошная гостиная",
+          p1_impact: "Продано за 11 дней",
+          p1_title: "Резиденция на Palm Jumeirah",
+          p1_loc: "Palm Jumeirah, Дубай",
+          p2_badge: "Люкс Пентхаус",
+          p2_impact: "Продано на 16% выше запроса",
+          p2_title: "Главная спальня-оазис",
+          p2_loc: "Downtown Dubai, ОАЭ",
+          p3_badge: "Эксклюзивная кухня",
+          p3_impact: "Продано за 9 дней",
+          p3_title: "Монохромная кухня",
+          p3_loc: "Пентхаус в Dubai Marina",
+          p4_badge: "Кабинет руководителя",
+          p4_impact: "Продано выше запроса",
+          p4_title: "Представительская гостиная",
+          p4_loc: "DIFC Residency, Дубай",
+          p5_badge: "Элегантный холл",
+          p5_impact: "Подготовка и Сделка",
+          p5_title: "Величие Emirates Hills",
+          p5_loc: "Emirates Hills, Дубай",
+          p6_badge: "Эксклюзивная столовая",
+          p6_impact: "Продано за 14 дней",
+          p6_title: "Резиденция в Jumeirah Golf",
+          p6_loc: "Golf Estates, Дубай",
+          p7_badge: "Художественная перегородка",
+          p7_impact: "Продано за 18 дней",
+          p7_title: "Королевский пентхаус",
+          p7_loc: "Dubai Marina, ОАЭ",
+          p8_badge: "Спальня Люкс",
+          p8_impact: "Продано на 20% выше запроса",
+          p8_title: "Оазис в Dubai Hills",
+          p8_loc: "Dubai Hills, Дубай",
+          p9_badge: "Медиа-комната",
+          p9_impact: "Продано за 15 дней",
+          p9_title: "Мраморный медиа-люкс",
+          p9_loc: "Downtown Dubai",
+          p10_badge: "Столовая",
+          p10_impact: "Продано за 18 дней",
+          p10_title: "Минималистичная столовая",
+          p10_loc: "Dubai Marina, ОАЭ",
+          p11_badge: "Индивидуальная спальня",
+          p11_impact: "Подготовлено и Продано",
+          p11_title: "Спальня с арочным изголовьем",
+          p11_loc: "Palm Jumeirah",
+          p12_badge: "Эксклюзивная кухня",
+          p12_impact: "Подготовка и Сделка",
+          p12_title: "Темная мраморная кухня",
+          p12_loc: "Emirates Hills",
+          p13_badge: "Кухонная кладовая",
+          p13_impact: "Продано за 15 дней",
+          p13_title: "Кухня из теплого дерева",
+          p13_loc: "Jumeirah, Дубай",
+          p14_badge: "Роскошный лаундж",
+          p14_impact: "Продано за 10 дней",
+          p14_title: "Лаундж Blue Haven",
+          p14_loc: "Dubai Hills, Дубай",
+          p15_badge: "Медиа-лаундж",
+          p15_impact: "Продано выше запроса",
+          p15_title: "Мраморный медиа-лаундж",
+          p15_loc: "DIFC Residency, Дубай",
+          p16_badge: "Декоративная стена",
+          p16_impact: "Продано выше запроса",
+          p16_title: "Комната с рифлеными панелями",
+          p16_loc: "DIFC Residency, Дубай",
+          p17_badge: "Эксклюзивная столовая",
+          p17_impact: "Продано за 12 дней",
+          p17_title: "Монохромная столовая",
+          p17_loc: "Palm Jumeirah",
+          p18_badge: "Эксклюзивный обеденный зал",
+          p18_impact: "Продано за 8 дней",
+          p18_title: "Современная столовая",
+          p18_loc: "Dubai Design District",
+          filter_all: "Все проекты",
+          filter_living: "Гостиные",
+          filter_bedroom: "Спальни",
+          filter_kitchen: "Кухни и столовые",
+          t1_text: "\"Мы не могли продать нашу виллу на Palm Jumeirah пять месяцев. Алина полностью изменила планировку, добавила потрясающие серебряные металлические акценты, и мы закрыли сделку через 12 дней на 18% выше первоначального плана. Абсолютный гений.\"",
+          t1_author: "Юссеф Аль-Мансури",
+          t1_title: "Владелец ультрароскошного жилья",
+          t2_text: "\"Дизайн Алины &mdash; незаменимый инструмент для наших продаж. Объекты от 'naz by nazish' продаются в среднем в 3 раза быстрее обычных люксовых предложений. Её планировка мгновенно создает конкурентную атмосферу среди покупателей.\"",
+          t2_author: "Елена Ростова",
+          t2_title: "Старший брокер, Luxury Sotheby's Dubai",
+          t3_text: "\"Необыкновенный визуальный планировщик. Алина не просто готовит недвижимость, она создает эмоциональные истории. Монохромная концепция дизайна в нашем пентхаусе в Dubai Marina выглядела настолько дорого и цельно, что покупатель приобрел его полностью меблированным.\"",
+          t3_author: "Маркус Стерлинг",
+          t3_title: "Партнер инвестиционного фонда недвижимости",
+          faq_tag: "Методология и стратегия",
+          faq_title: "Формула ускорения",
+          faq_desc: "Мы понимаем, что преображение элитного актива &mdash; это расчетливая бизнес-инвестиция. Узнайте, как архитектор Алина Назиш оптимизирует пространственную психологию для максимальной скорости закрытия сделок.",
+          faq_q1: "Как профессиональный дизайн ускоряет продажу элитного жилья?",
+          faq_a1: "90% потенциальных покупателей категории UHNW не могут представить потенциал пустого или плохо спланированного пространства. Страэгический дизайн от <strong>naz by nazish</strong> создает роскошную, готовую к заселению атмосферу, которая вызывает моментальную эмоциональную привязанность, устраняя любые сомнения и ускоряя сделку до 300%.",
+          faq_q2: "Каковы средние сроки архитектурной трансформации?",
+          faq_a2: "Время &mdash; деньги, и каждый день простоя объекта приносит убытки. В зависимости от масштаба виллы или апартаментов, наши преобразования занимают от 2 до 4 недель. Сюда входят перепланировка, подбор мебели, световой дизайн и финальное декорирование.",
+          faq_q3: "Вы работаете как с виллами, так и с пентхаусами?",
+          faq_a3: "Да. Мы проектируем пространственные решения для просторных вилл на побережье, входных групп и высококлассных городских пентхаусов. Каждый проект получает индивидуальную визуальную систему (например, наши фирменные палитры Monochromatic Black & Silver или White & Rose Gold) под целевую аудиторию покупателей.",
+          faq_q4: "Как рассчитывается стоимость услуг и каков ожидаемый ROI?",
+          faq_a4: "Стоимость индивидуальна, она зависит от площади и глубины проработки. В среднем, инвестиции в наш дизайн приносят владельцу от 300% до 500% ROI. Объекты не только продаются в 3 раза быстрее, но и прибавляют в цене в среднем от 15% до 18% по сравнению с аналогичными предложениями на рынке.",
+          contact_tag: "Обеспечьте себе преимущество",
+          contact_headline: "Давайте увеличим капитализацию и скорость продажи вашего объекта.",
+          contact_desc: "Запланируйте частный показ или запросите стратегическую консультацию напрямую у архитектора Алины Назиш в WhatsApp.",
+          contact_cta: "Консультация в WhatsApp",
+          footer_brand_desc: "Архитектурные решения и премиальный интерьерный стайлинг для максимальной скорости и доходности сделок с элитной недвижимостью.",
+          footer_explore: "Разделы",
+          footer_atelier: "Ателье",
+          footer_inquiries: "Вопросы и бронирование",
+          footer_email_label: "Прямой Email",
+          footer_loc_label: "Адрес",
+          footer_loc_val: "Dubai Design District (d3), ОАЭ",
+          footer_copy: "&copy; 2026 naz by nazish. Все авторские права защищены. Дизайн Ар. Алины Назиш.",
+          try_own_project: "Предпросмотр вашего проекта",
+          customizer_desc: "Протестируйте собственное пространство в нашем премиальном слайдере (или перетащите файлы прямо на слайдер)",
+          btn_upload_before: "Загрузить фото ДО",
+          btn_upload_after: "Загрузить фото ПОСЛЕ",
+          no_file_selected: "Файл не выбран",
+          reset_default_photos: "Вернуть исходные фото"
+        }
+      };
 
-        menuToggle.addEventListener('click', () => {
-          menuToggle.classList.toggle('active');
-          navMenu.classList.toggle('active');
-        });
+      const langBtns = document.querySelectorAll('.lang-btn');
 
-        navLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-          });
-        });
+      function setLanguage(lang) {
+        // Fallback to English if language not supported
+        if (!translations[lang]) lang = 'en';
 
-        // --- 3. Premium IntersectionObserver Scroll Reveal ---
-        const revealElements = document.querySelectorAll('.scroll-reveal');
-        
-        const revealCallback = (entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('active');
-              // Unobserve after showing so it remains cleanly in place
-              observer.unobserve(entry.target);
-            }
-          });
-        };
-
-        const revealObserver = new IntersectionObserver(revealCallback, {
-          root: null, // viewport
-          threshold: 0.15, // trigger when 15% of element is visible
-          rootMargin: "0px 0px -50px 0px" // early offset
-        });
-
-        revealElements.forEach(element => {
-          revealObserver.observe(element);
-        });
-
-        // --- 4. Interactive Details Single Open Accordion Controller ---
-        const detailsElements = document.querySelectorAll('.faq-accordion-item details');
-        
-        detailsElements.forEach(targetDetail => {
-          targetDetail.addEventListener('toggle', () => {
-            if (targetDetail.open) {
-              detailsElements.forEach(otherDetail => {
-                if (otherDetail !== targetDetail && otherDetail.open) {
-                  otherDetail.open = false;
-                }
-              });
-            }
-          });
-        });
-
-        // --- 5. High-Performance, Viewport-Aware, Accessibility-Minded Parallax Controller ---
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-        if (!prefersReducedMotion) {
-          const heroOverlay = document.getElementById('hero-bg-overlay');
-          const aboutImg = document.getElementById('about-img');
-          
-          let isHeroVisible = true;
-          let isAboutVisible = false;
-          
-          const heroSection = document.getElementById('section-hero');
-          const aboutSection = document.getElementById('section-about');
-          
-          // Viewport awareness: Only process coordinates when sections are in view
-          const heroParallaxObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              isHeroVisible = entry.isIntersecting;
-            });
-          }, { threshold: 0 });
-          
-          const aboutParallaxObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              isAboutVisible = entry.isIntersecting;
-            });
-          }, { threshold: 0 });
-          
-          if (heroSection) heroParallaxObserver.observe(heroSection);
-          if (aboutSection) aboutParallaxObserver.observe(aboutSection);
-          
-          let ticking = false;
-          
-          function updateParallax() {
-            const scrollY = window.scrollY;
-            
-            // Hero background subtle translation
-            if (isHeroVisible && heroOverlay) {
-              const translateVal = scrollY * 0.18; // smooth multiplier
-              heroOverlay.style.setProperty('--parallax-translate-hero', `${translateVal}px`);
-            }
-            
-            // About image relative viewport translation
-            if (isAboutVisible && aboutImg && aboutSection) {
-              const rect = aboutSection.getBoundingClientRect();
-              const viewportHeight = window.innerHeight;
-              const elementHeight = rect.height;
-              
-              // Map entering/exiting progress from 0 (entered) to 1 (left)
-              const progress = (viewportHeight - rect.top) / (viewportHeight + elementHeight);
-              
-              // Max translate offset in pixels
-              const maxTranslate = elementHeight * 0.12; 
-              const translateVal = (progress - 0.5) * maxTranslate;
-              
-              aboutImg.style.setProperty('--parallax-translate-about', `${translateVal}px`);
-            }
-            
-            ticking = false;
-          }
-          
-          window.addEventListener('scroll', () => {
-            if (!ticking) {
-              window.requestAnimationFrame(updateParallax);
-              ticking = true;
-            }
-          }, { passive: true });
-          
-          // Initialize first frame placement
-          window.requestAnimationFrame(updateParallax);
+        // 1. Update document attributes
+        if (lang === 'ar') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', lang);
         }
 
-      });
-    </script>
-  </body>
-</html>
+        // 2. Translate all elements marked with data-tr
+        document.querySelectorAll('[data-tr]').forEach(elem => {
+          const key = elem.getAttribute('data-tr');
+          if (translations[lang] && translations[lang][key]) {
+            elem.innerHTML = translations[lang][key];
+          }
+        });
 
+        // 3. Highlight the active language buttons (both desktop and mobile)
+        langBtns.forEach(btn => {
+          if (btn.getAttribute('data-lang-opt') === lang) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+
+        // 4. Save preferred language in local storage
+        localStorage.setItem('naz_preferred_lang', lang);
+      }
+
+      // Hook up event handlers
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const selectedLang = btn.getAttribute('data-lang-opt');
+          setLanguage(selectedLang);
+        });
+      });
+
+      // --- PORTFOLIO DYNAMIC GENERATION & FILTER ENGINE ---
+      const portfolioData = [
+        {
+          id: 1,
+          category: "kitchen",
+          size: "span-8",
+          img: "assets/wine-collection1.png",
+          fallback: "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p1"
+        },
+        {
+          id: 2,
+          category: "bedroom",
+          size: "span-4 tall",
+          img: "assets/bedroom_beige.png",
+          fallback: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p2"
+        },
+        {
+          id: 3,
+          category: "bedroom",
+          size: "span-5 tall",
+          img: "assets/bedroom_wood.png",
+          fallback: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p3"
+        },
+        {
+          id: 4,
+          category: "living",
+          size: "span-7",
+          img: "assets/living_white.png",
+          fallback: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p4"
+        },
+        {
+          id: 5,
+          category: "living",
+          size: "span-4 tall",
+          img: "assets/stair1.png",
+          fallback: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p5"
+        },
+        {
+          id: 6,
+          category: "living",
+          size: "span-8",
+          img: "assets/living_green1.png",
+          fallback: "https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p6"
+        },
+        {
+          id: 7,
+          category: "living",
+          size: "span-6",
+          img: "assets/living_green2.png",
+          fallback: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p7"
+        },
+        {
+          id: 8,
+          category: "bedroom",
+          size: "span-6",
+          img: "assets/twin_bedroom.png",
+          fallback: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p8"
+        },
+        {
+          id: 9,
+          category: "living",
+          size: "span-4 tall",
+          img: "assets/living_marble.png",
+          fallback: "https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p9"
+        },
+        {
+          id: 10,
+          category: "kitchen",
+          size: "span-8",
+          img: "assets/dining_white.png",
+          fallback: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p10"
+        },
+        {
+          id: 11,
+          category: "bedroom",
+          size: "span-5 tall",
+          img: "assets/bedroom_arch.png",
+          fallback: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p11"
+        },
+        {
+          id: 12,
+          category: "kitchen",
+          size: "span-7",
+          img: "assets/kitchen_dark.png",
+          fallback: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p12"
+        },
+        {
+          id: 13,
+          category: "kitchen",
+          size: "span-4 tall",
+          img: "assets/kitchen_wood.png",
+          fallback: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p13"
+        },
+        {
+          id: 14,
+          category: "living",
+          size: "span-8",
+          img: "assets/living_grey.png",
+          fallback: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p14"
+        },
+        {
+          id: 15,
+          category: "living",
+          size: "span-6",
+          img: "assets/living_tv_marble.png",
+          fallback: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p15"
+        },
+        {
+          id: 16,
+          category: "living",
+          size: "span-6",
+          img: "assets/living_fluted.png",
+          fallback: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p16"
+        },
+        {
+          id: 17,
+          category: "kitchen",
+          size: "span-6",
+          img: "assets/dining_marble.png",
+          fallback: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p17"
+        },
+        {
+          id: 18,
+          category: "kitchen",
+          size: "span-6",
+          img: "assets/dining_art.png",
+          fallback: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80",
+          trPrefix: "p18"
+        }
+      ];
+
+      const portfolioGrid = document.getElementById('portfolio-grid');
+
+      function renderPortfolio(filter = 'all') {
+        portfolioGrid.innerHTML = '';
+        
+        const filteredData = filter === 'all' 
+          ? portfolioData 
+          : portfolioData.filter(item => item.category === filter);
+
+        filteredData.forEach(item => {
+          const card = document.createElement('div');
+          card.className = `portfolio-item ${item.size} reveal reveal-up`;
+          card.setAttribute('data-category', item.category);
+
+          const imgSrc = (item.img === "assets/wine-collection1.png" || item.img === "assets/stair1.png") ? item.img : item.fallback;
+
+          card.innerHTML = `
+            <div class="portfolio-img-wrapper">
+              <img src="${imgSrc}" onerror="this.onerror=null; this.src='${item.fallback}';" referrerPolicy="no-referrer" alt="" class="portfolio-img">
+            </div>
+            <div class="portfolio-overlay">
+              <div class="portfolio-badge-row">
+                <span class="portfolio-badge" data-tr="${item.trPrefix}_badge"></span>
+                <span class="portfolio-impact-badge" data-tr="${item.trPrefix}_impact"></span>
+              </div>
+              <h3 class="portfolio-title serif-font" data-tr="${item.trPrefix}_title"></h3>
+              <p class="portfolio-location" data-tr="${item.trPrefix}_loc"></p>
+            </div>
+            <div class="portfolio-info-mobile">
+              <div class="portfolio-mobile-badge-row">
+                <span class="portfolio-badge" data-tr="${item.trPrefix}_badge"></span>
+                <span class="portfolio-impact-badge" data-tr="${item.trPrefix}_impact"></span>
+              </div>
+              <h3 class="serif-font" data-tr="${item.trPrefix}_title"></h3>
+              <p data-tr="${item.trPrefix}_loc"></p>
+            </div>
+          `;
+          
+          portfolioGrid.appendChild(card);
+        });
+
+        // Translate the newly generated cards
+        const currentLang = localStorage.getItem('naz_preferred_lang') || 'en';
+        document.querySelectorAll('#portfolio-grid [data-tr]').forEach(elem => {
+          const key = elem.getAttribute('data-tr');
+          if (translations[currentLang] && translations[currentLang][key]) {
+            elem.innerHTML = translations[currentLang][key];
+          }
+        });
+
+        // Trigger reveal fade-in after a short timeout so transition applies beautifully
+        setTimeout(() => {
+          portfolioGrid.querySelectorAll('.portfolio-item').forEach(item => {
+            item.classList.add('active');
+          });
+        }, 50);
+      }
+
+      // Initial Render
+      renderPortfolio('all');
+
+      // Hook up filter buttons
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-filter');
+          renderPortfolio(filter);
+        });
+      });
+
+      // Initialize language from local storage or default to English
+      const savedLang = localStorage.getItem('naz_preferred_lang') || 'en';
+      setLanguage(savedLang);
+
+
+      // --- 1. STICKY HEADER & ACTIVE SCROLLSPY ---
+      const header = document.getElementById('header');
+      const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-links a');
+      const sections = document.querySelectorAll('section');
+
+      window.addEventListener('scroll', () => {
+        // Sticky Header Toggle
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+
+        // ScrollSpy Highlight Active Link
+        let currentSectionId = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.offsetHeight;
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
+          }
+        });
+
+        if (currentSectionId) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+
+      // --- 2. MOBILE NAVIGATION HAMBURGER ---
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+
+      function toggleMobileMenu() {
+        hamburgerBtn.classList.toggle('is-active');
+        mobileMenu.classList.toggle('is-active');
+        document.body.classList.toggle('menu-open');
+        
+        // Prevent body scrolling when mobile menu is active
+        if (document.body.classList.contains('menu-open')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      }
+
+      hamburgerBtn.addEventListener('click', toggleMobileMenu);
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          // Close menu after clicking a link
+          if (mobileMenu.classList.contains('is-active')) {
+            toggleMobileMenu();
+          }
+        });
+      });
+
+      // --- 3. INTERACTIVE BEFORE/AFTER SLIDER ---
+      const impactSlider = document.getElementById('impact-slider');
+      const afterImage = document.getElementById('after-image');
+      const sliderBar = document.getElementById('slider-bar');
+      const sliderHandle = document.getElementById('slider-handle');
+
+      function adjustSlider(xPosition) {
+        const rect = impactSlider.getBoundingClientRect();
+        let positionPercent = ((xPosition - rect.left) / rect.width) * 100;
+        
+        // Lock percentage boundaries [0, 100]
+        if (positionPercent < 0) positionPercent = 0;
+        if (positionPercent > 100) positionPercent = 100;
+
+        // Apply percentages to CSS styles
+        afterImage.style.width = `${positionPercent}%`;
+        sliderBar.style.left = `${positionPercent}%`;
+        sliderHandle.style.left = `${positionPercent}%`;
+      }
+
+      let isDragging = false;
+
+      // Mouse Events
+      impactSlider.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        adjustSlider(e.clientX);
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        adjustSlider(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      // Touch Events
+      impactSlider.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        adjustSlider(e.touches[0].clientX);
+      });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        adjustSlider(e.touches[0].clientX);
+      });
+
+      window.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+
+
+
+      // --- 4. TESTIMONIALS CAROUSEL SLIDER ---
+      const testimonialTrack = document.getElementById('testimonial-track');
+      const slides = Array.from(testimonialTrack.children);
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const dotsContainer = document.getElementById('dots-container');
+      let currentSlideIndex = 0;
+      let testimonialInterval;
+
+      // Clear existing static indicators and construct dynamic ones based on number of slides
+      dotsContainer.innerHTML = '';
+      slides.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `slider-dot ${idx === 0 ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to testimonial ${idx + 1}`);
+        dot.addEventListener('click', () => {
+          goToSlide(idx);
+          resetAutoplay();
+        });
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsContainer.children);
+
+      function updateSliderUI() {
+        slides.forEach((slide, idx) => {
+          if (idx === currentSlideIndex) {
+            slide.classList.add('active');
+          } else {
+            slide.classList.remove('active');
+          }
+        });
+
+        dots.forEach((dot, idx) => {
+          if (idx === currentSlideIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      function goToSlide(index) {
+        currentSlideIndex = index;
+        if (currentSlideIndex >= slides.length) currentSlideIndex = 0;
+        if (currentSlideIndex < 0) currentSlideIndex = slides.length - 1;
+        updateSliderUI();
+      }
+
+      function nextSlide() {
+        goToSlide(currentSlideIndex + 1);
+      }
+
+      function prevSlide() {
+        goToSlide(currentSlideIndex - 1);
+      }
+
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoplay();
+      });
+
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoplay();
+      });
+
+      // Autoplay
+      function startAutoplay() {
+        testimonialInterval = setInterval(nextSlide, 7000);
+      }
+
+      function resetAutoplay() {
+        clearInterval(testimonialInterval);
+        startAutoplay();
+      }
+
+      startAutoplay();
+
+      // Pause autoplay on mouse hover to improve accessibility
+      testimonialTrack.addEventListener('mouseenter', () => clearInterval(testimonialInterval));
+      testimonialTrack.addEventListener('mouseleave', startAutoplay);
+
+
+      // --- 5. SMOOTH INTERACTIVE FAQs ACCORDION ---
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        const panel = item.querySelector('.faq-panel');
+
+        trigger.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          // Close all FAQ items
+          faqItems.forEach(otherItem => {
+            otherItem.classList.remove('active');
+            otherItem.querySelector('.faq-panel').style.maxHeight = null;
+          });
+
+          // Open clicked item if it was closed
+          if (!isActive) {
+            item.classList.add('active');
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
+      });
+
+
+      // --- 6. SCROLL REVEAL (INTERSECTION OBSERVER) ---
+      const revealElements = document.querySelectorAll('.reveal');
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Stop observing once animated
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12, // Reveal when 12% of the element is visible
+        rootMargin: '0px 0px -40px 0px' // Slightly offset bottom margin to trigger earlier on scroll
+      });
+
+      revealElements.forEach(elem => {
+        revealObserver.observe(elem);
+      });
+
+    });
+  </script>
+</body>
+</html>
