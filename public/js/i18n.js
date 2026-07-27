@@ -116,20 +116,21 @@ const translations = {
     port_4_outcome: "Sold at Full Price",
     port_4_desc: "Basic renovation, wall treatment curation, and white-glove furniture staging for a sprawling private villa estate.",
 
-    port_5_title: "DIFC Executive Suite",
-    port_5_loc: "DIFC Corporate Hub",
-    port_5_outcome: "Leased in 7 Days",
-    port_5_desc: "Executive corporate suite staging focusing on warm luxury minimalist ergonomics and acoustic harmony.",
+    port_5_title: "Artisanal Bakery Concept",
+    port_5_outcome: "High Footfall & Retail Launch",
+    port_5_desc: "Complete spatial design, bespoke display counter staging, and warm ambient lighting for a boutique artisanal bakery.",
 
-    port_6_title: "Business Bay Creative Studio",
-    port_6_loc: "Business Bay",
-    port_6_outcome: "100% Occupancy",
-    port_6_desc: "Creative agency space spatial planning, custom lighting grids, and contemporary furniture staging.",
+    port_6_title: "Gourmet Bakery Interior",
+    port_6_outcome: "+35% Customer Engagement",
+    port_6_desc: "Interior layout optimization, seating arrangements, and custom display staging highlighting handcrafted baked goods.",
 
-    port_7_title: "Jumeirah Retail Showroom",
-    port_7_loc: "Jumeirah",
-    port_7_outcome: "Boutique Showroom",
-    port_7_desc: "Boutique retail showroom interior curation, facade lighting, and high-end display staging.",
+    port_7_title: "Modern Specialty Café",
+    port_7_outcome: "Fully Booked Opening Week",
+    port_7_desc: "Architectural spatial flow, espresso bar ergonomics, and contemporary seating layout designed for modern café culture.",
+
+    port_8_title: "Boutique Espresso & Dessert Lounge",
+    port_8_outcome: "+40% Social Media Reach",
+    port_8_desc: "Elegant interior styling, ambient mood lighting, and photogenic focal points tailored for a boutique café experience.",
 
     lightbox_wa_btn: "Inquire About Similar Property Transformation",
 
@@ -325,20 +326,21 @@ const translations = {
     port_4_outcome: "تم البيع بالسعر الكامل",
     port_4_desc: "تجديد أساسي، اختيار طلاء وتأطير جدران، وتنسيق ميداني كامل لأثاث فيلا فاخرة.",
 
-    port_5_title: "جناح تنفيذي في مركز دبي المالي",
-    port_5_loc: "مركز دبي المالي العالمي",
-    port_5_outcome: "تم التأجير خلال ٧ أيام",
-    port_5_desc: "تنسيق مكتب تنفيذي يركز على الفخامة الهادئة والمرونة الصوتية وعناصر الإنتاجية.",
+    port_5_title: "مخبز حرفي راقي",
+    port_5_outcome: "إقبال مرتفع وافتتاح ناجح",
+    port_5_desc: "تصميم مكاني كامل، وتنسيق منصات العرض المخصصة، وإضاءة دافئة لمخبز حرفي مميز.",
 
-    port_6_title: "استوديو إبداعي في بيزنس باي",
-    port_6_loc: "بيزنس باي",
-    port_6_outcome: "نسبة إشغال ١٠٠٪",
-    port_6_desc: "تخطيط مكاني لوكالة إبداعية، توزيع إضاءة مخصص، وتأثيث عصري راقي.",
+    port_6_title: "تصميم داخلي لمخبز فاخر",
+    port_6_outcome: "+٣٥٪ زيادة في تفاعل العملاء",
+    port_6_desc: "تحسين المخطط الداخلي، توزيع الجلسات، وتنسيق منصات تقديم المخبوزات الطازجة.",
 
-    port_7_title: "معرض تجاري في جميرا",
-    port_7_loc: "جميرا",
-    port_7_outcome: "معرض بوتيك راقي",
-    port_7_desc: "تنسيق فاخر لمعرض تجاري، إضاءة واجهات، وعرض منتجات مميز جذب العملاء.",
+    port_7_title: "مقهى عصري متخصص",
+    port_7_outcome: "حجز كامل في أسبوع الافتتاح",
+    port_7_desc: "تخطيط معماري مميز، توزيع بار القهوة بطريقة مريحة، وجلسات عصرية تلائم ثقافة المقاهي الحديثة.",
+
+    port_8_title: "صالة مقهى وحلويات راقية",
+    port_8_outcome: "+٤٠٪ انتشار على وسائل التواصل",
+    port_8_desc: "تنسيق داخلي أنيق، إضاءة هادئة، وزوايا مميزة مصممة خصيصاً لتجربة مقهى فاخرة.",
 
     lightbox_wa_btn: "استفسر عن تحويل عقاري مشابه",
 
@@ -537,20 +539,21 @@ const translations = {
     port_4_outcome: "Продано по полной цене",
     port_4_desc: "Базовый ремонт, акцентный декор стен и подбор премиальной мебели для частной виллы.",
 
-    port_5_title: "Офис в DIFC",
-    port_5_loc: "DIFC, Дубай",
-    port_5_outcome: "Сдано за 7 дней",
-    port_5_desc: "Стейджинг представительского офиса с акцентом на тихий люкс, эргономику и акустический комфорт.",
+    port_5_title: "Артизанальная пекарня",
+    port_5_outcome: "Высокая посещаемость",
+    port_5_desc: "Полный дизайн пространства, витринное оформление и теплое интерьерное освещение для крафтовой пекарни.",
 
-    port_6_title: "Студия в Business Bay",
-    port_6_loc: "Business Bay",
-    port_6_outcome: "Заполняемость 100%",
-    port_6_desc: "Планировка пространства для креативного агентства, индивидуальный свет и стильная мебель.",
+    port_6_title: "Интерьер крафтовой пекарни",
+    port_6_outcome: "Рост вовлеченности +35%",
+    port_6_desc: "Оптимизация планировки зала, зона посадки и стильный стейджинг витрин для пекарни.",
 
-    port_7_title: "Шоурум в Jumeirah",
-    port_7_loc: "Jumeirah",
-    port_7_outcome: "Бутик-шоурум",
-    port_7_desc: "Дизайн и стейджинг коммерческого шоурума, подсветка фасада и витрин.",
+    port_7_title: "Современное спешелти-кафе",
+    port_7_outcome: "Полная посадка в неделю открытия",
+    port_7_desc: "Планировка зала, эргономика эспрессо-бара и стильная мебель для современного городского кафе.",
+
+    port_8_title: "Бутик-кафе и десерт-лаундж",
+    port_8_outcome: "Рост охвата в соцсетях +40%",
+    port_8_desc: "Элегантный интерьер, атмосферный свет и фотогеничные зоны для уютного бутик-кафе.",
 
     lightbox_wa_btn: "Узнать о похожем проекте",
 
