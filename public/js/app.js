@@ -81,7 +81,7 @@ function initNavigation() {
           pricing: 'Architectural Services & Practice — naz by nazish',
           portfolio: 'Selected Works & Portfolio — naz by nazish',
           faq: 'Practice & FAQ — naz by nazish',
-          contact: 'Commission Inquiry — naz by nazish'
+          contact: 'Inquiry — naz by nazish'
         },
         ar: {
           home: 'ناز باي نزيش — العمارة والتصميم المكاني | المهندسة ألينا نزيش',
@@ -89,7 +89,7 @@ function initNavigation() {
           pricing: 'الخدمات والممارسات المعمارية — ناز باي نزيش',
           portfolio: 'معرض المشاريع المعمارية — ناز باي نزيش',
           faq: 'المنهجية والأسئلة الشائعة — ناز باي نزيش',
-          contact: 'طلب مشروع واستشارة — ناز باي نزيش'
+          contact: 'الاستفسارات والتواصل — ناز باي نزيش'
         },
         ru: {
           home: 'naz by nazish — Архитектура и пространственный дизайн | Арх. Алина Назиш',
@@ -97,7 +97,7 @@ function initNavigation() {
           pricing: 'Архитектурные услуги и практика — naz by nazish',
           portfolio: 'Архитектурное портфолио — naz by nazish',
           faq: 'Практика и FAQ — naz by nazish',
-          contact: 'Запрос на проект — naz by nazish'
+          contact: 'Запрос — naz by nazish'
         }
       };
 
@@ -355,7 +355,7 @@ function initFAQAccordion() {
 }
 
 /* ==========================================================================
-   Architectural Commission Inquiry Form Handler
+   Architectural Inquiry Form Handler
    ========================================================================== */
 function initContactForm() {
   const contactForm = document.getElementById('consultationForm');
@@ -372,10 +372,10 @@ function initContactForm() {
     const planTier = document.getElementById('formPlanTier')?.value || 'Full Architecture & Spatial Design';
     const notes = document.getElementById('formNotes')?.value.trim() || 'No additional project brief provided.';
 
-    const subject = `Architectural Commission Inquiry: ${name} (${propType})`;
+    const subject = `Architectural Inquiry: ${name} (${propType})`;
     const body = `Hello Ar. Alina Nazish,
 
-I would like to initiate an architectural commission inquiry for naz by nazish.
+I would like to initiate an inquiry for naz by nazish.
 
 Client Name: ${name}
 Client Role: ${userRole}
@@ -397,8 +397,8 @@ ${notes}`;
     }
     const currentLang = localStorage.getItem('naz_lang') || 'en';
     const successMessages = {
-      en: 'Thank you for your commission inquiry! Ar. Alina Nazish will review your project brief and contact you shortly.',
-      ar: 'شكراً لطلبك! ستقوم المهندسة ألينا نزيش بمراجعة تفاصيل مشروعك المعماري والتواصل معك قريباً.',
+      en: 'Thank you for your inquiry! Ar. Alina Nazish will review your project brief and contact you shortly.',
+      ar: 'شكراً لاستفسارك! ستقوم المهندسة ألينا نزيش بمراجعة تفاصيل طلبك والتواصل معك قريباً.',
       ru: 'Благодарим за ваш запрос! Арх. Алина Назиш ознакомится с описанием проекта и свяжется с вами в ближайшее время.'
     };
     alertBanner.innerHTML = `<strong>${successMessages[currentLang] || successMessages.en}</strong>`;

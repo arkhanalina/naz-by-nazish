@@ -13,8 +13,8 @@ const translations = {
     nav_portfolio: "Portfolio",
     nav_faq: "Practice & FAQ",
     nav_contact: "Contact",
-    nav_book_consultation: "Commission Inquiry",
-    mobile_chat_wa: "Commission Inquiry",
+    nav_book_consultation: "Inquiry",
+    mobile_chat_wa: "Inquiry",
     lang_select_label: "Language:",
 
     // Hero
@@ -167,18 +167,18 @@ const translations = {
     faq_a6: "Simply reach out via our contact inquiry form below or email Ar. Alina Nazish directly at ar.khan.alina@gmail.com with your site location, project typology, and vision. We will schedule an initial design consultation to explore feasibility and project scope.",
 
     // Contact
-    contact_eyebrow: "COMMISSIONS & INQUIRIES",
+    contact_eyebrow: "INQUIRIES",
     contact_title: "Initiate Your Architectural Project",
     contact_subtitle: "Connect directly with Ar. Alina Nazish to discuss your residential, commercial, or hospitality architectural vision across the UAE.",
     contact_subtitle_role: "Ar. Alina Nazish — Principal Architect & Spatial Designer",
     contact_email_title: "Studio Email",
-    contact_email_detail: "Direct architectural commission inquiries.",
+    contact_email_detail: "Direct architectural inquiries.",
     contact_email_link: "ar.khan.alina@gmail.com &rarr;",
     contact_ig_title: "Design Studio Instagram",
     contact_ig_detail: "Architectural process, site insights & finished works.",
     contact_coverage_title: "PRACTICE LOCATIONS (ALL 7 UAE EMIRATES & GCC)",
     contact_coverage_list: "Dubai • Abu Dhabi • Sharjah • Ajman • Ras Al Khaimah • Fujairah • Umm Al Quwain",
-    form_title: "Architectural Commission Inquiry",
+    form_title: "Architectural Inquiry",
     form_subtitle: "Share your project details below to schedule an initial design consultation.",
 
     lbl_name: "Full Name",
@@ -204,7 +204,7 @@ const translations = {
     placeholder_name: "e.g. Sarah Mansoor",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Mention estimated area (sq.ft), design preferences, and timeline...",
-    btn_submit_request: "Submit Commission Inquiry",
+    btn_submit_request: "Submit Inquiry",
 
     // Footer
     footer_subtitle: "Ar. Alina Nazish — Principal Architect & Spatial Designer",
@@ -214,7 +214,7 @@ const translations = {
     footer_nav_pricing: "Services & Disciplines",
     footer_nav_portfolio: "Selected Works",
     footer_nav_faq: "Practice & FAQ",
-    footer_nav_contact: "Contact & Commissions",
+    footer_nav_contact: "Contact & Inquiries",
     footer_contact_heading: "Studio Contact",
     footer_email_link: "Email: ar.khan.alina@gmail.com",
     footer_location: "Location: United Arab Emirates",
@@ -230,8 +230,8 @@ const translations = {
     nav_portfolio: "معرض الأعمال",
     nav_faq: "المنهجية والأسئلة",
     nav_contact: "اتصل بنا",
-    nav_book_consultation: "طلب استشارة معمارية",
-    mobile_chat_wa: "طلب استشارة معمارية",
+    nav_book_consultation: "استفسار",
+    mobile_chat_wa: "استفسار",
     lang_select_label: "اللغة:",
 
     // Hero
@@ -384,18 +384,18 @@ const translations = {
     faq_a6: "يسعدنا تواصلكم عبر نموذج طلب المشروع أدناه أو مراسلة المهندسة ألينا نزيش مباشرة على ar.khan.alina@gmail.com مع تفاصيل موقع ونوع المشروع لترتيب جلسة استشارية أولية.",
 
     // Contact
-    contact_eyebrow: "المشاريع والاستشارات",
+    contact_eyebrow: "الاستفسارات والتواصل",
     contact_title: "ابدأ مشروعك المعماري مع المهندسة ألينا نزيش",
     contact_subtitle: "تواصل مباشرة مع المهندسة ألينا نزيش لمناقشة رؤيتك المعمارية لمشروعك السكني أو التجاري في الإمارات.",
     contact_subtitle_role: "المهندسة ألينا نزيش — مهندسة معمارية ومصممة مساحات",
     contact_email_title: "البريد الإلكتروني للاستوديو",
-    contact_email_detail: "استفسارات المشاريع والاستشارات المعمارية المباشرة.",
+    contact_email_detail: "استفسارات معمارية مباشرة.",
     contact_email_link: "ar.khan.alina@gmail.com &larr;",
     contact_ig_title: "إنستغرام الاستوديو",
     contact_ig_detail: "كواليس التصميم، لقطات المواقع، والأعمال المكتملة.",
     contact_coverage_title: "نطاق الممارسة (جميع إمارات الدولة والخليج)",
     contact_coverage_list: "دبي • أبوظبي • الشارقة • عجمان • رأس الخيمة • الفجيرة • أم القيوين",
-    form_title: "طلب استشارة ومشروع معماري",
+    form_title: "طلب استفسار معماري",
     form_subtitle: "شاركنا تفاصيل مشروعك لجدولة جلسة استشارة تصميمية أولية.",
 
     lbl_name: "الاسم الكامل",
@@ -421,7 +421,7 @@ const translations = {
     placeholder_name: "مثال: سارة أحمد",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "اذكر المساحة التقريبية (قدم²)، التفضيلات التصميمية، والجدول الزمني...",
-    btn_submit_request: "إرسال طلب المشروع",
+    btn_submit_request: "إرسال الاستفسار",
 
     // Footer
     footer_subtitle: "المهندسة ألينا نزيش — مهندسة معمارية ومصممة مساحات",
@@ -431,7 +431,7 @@ const translations = {
     footer_nav_pricing: "الخدمات المعمارية",
     footer_nav_portfolio: "الأعمال المختارة",
     footer_nav_faq: "المنهجية والأسئلة",
-    footer_nav_contact: "المشاريع والتواصل",
+    footer_nav_contact: "التواصل والاستفسار",
     footer_contact_heading: "التواصل مع الاستوديو",
     footer_email_link: "البريد الإلكتروني: ar.khan.alina@gmail.com",
     footer_location: "الموقع: الإمارات العربية المتحدة",
@@ -447,8 +447,8 @@ const translations = {
     nav_portfolio: "Портфолио",
     nav_faq: "Практика и FAQ",
     nav_contact: "Контакты",
-    nav_book_consultation: "Запрос на проект",
-    mobile_chat_wa: "Запрос на проект",
+    nav_book_consultation: "Запрос",
+    mobile_chat_wa: "Запрос",
     lang_select_label: "Язык:",
 
     // Hero
@@ -601,18 +601,18 @@ const translations = {
     faq_a6: "Заполните форму ниже или напишите напрямую арх. Алине Назиш на ar.khan.alina@gmail.com с описанием объекта и локации для назначения первичной консультации.",
 
     // Contact
-    contact_eyebrow: "ЗАПРОС НА ПРОЕКТ",
+    contact_eyebrow: "ЗАПРОСЫ И КОНТАКТЫ",
     contact_title: "Обсудить проект с арх. Алиной Назиш",
     contact_subtitle: "Свяжитесь напрямую с ведущим архитектором для обсуждения концепции вашей резиденции или коммерческого пространства в ОАЭ.",
     contact_subtitle_role: "Арх. Алина Назиш — Ведущий архитектор и дизайнер пространств",
     contact_email_title: "Email бюро",
-    contact_email_detail: "Прямые запросы на проектирование и консультации.",
+    contact_email_detail: "Прямые архитектурные запросы.",
     contact_email_link: "ar.khan.alina@gmail.com &rarr;",
     contact_ig_title: "Instagram бюро",
     contact_ig_detail: "Процесс проектирования, стройка и готовые объекты.",
     contact_coverage_title: "ГЕОГРАФИЯ РАБОТЫ (ВСЕ 7 ЭМИРАТОВ И GCC)",
     contact_coverage_list: "Дубай • Абу-Даби • Шарджа • Аджман • Рас-эль-Хайма • Фуджейра • Умм-эль-Кувейн",
-    form_title: "Заявка на архитектурный проект",
+    form_title: "Архитектурный запрос",
     form_subtitle: "Заполните форму ниже для назначения первой проектной встречи.",
 
     lbl_name: "Ваше имя",
@@ -638,7 +638,7 @@ const translations = {
     placeholder_name: "например, Алексей Иванов",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Укажите площадь (кв. футы / метры), пожелания и ориентировочные сроки...",
-    btn_submit_request: "Отправить запрос на проект",
+    btn_submit_request: "Отправить запрос",
 
     // Footer
     footer_subtitle: "Арх. Алина Назиш — Ведущий архитектор и дизайнер пространств",
