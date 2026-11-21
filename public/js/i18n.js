@@ -12,7 +12,7 @@ const translations = {
     nav_faq: "FAQ",
     nav_contact: "Contact Us",
     nav_book_consultation: "Book Consultation",
-    mobile_chat_wa: "Chat on WhatsApp",
+    mobile_chat_wa: "Book Consultation",
     lang_select_label: "Language:",
 
     // Hero
@@ -132,7 +132,7 @@ const translations = {
     port_8_outcome: "+40% Social Media Reach",
     port_8_desc: "Elegant interior styling, ambient mood lighting, and photogenic focal points tailored for a boutique café experience.",
 
-    lightbox_wa_btn: "Inquire About Similar Property Transformation",
+    lightbox_inquiry_btn: "Inquire About Similar Property Transformation",
 
     // FAQ
     faq_eyebrow: "HELP & CLARITY",
@@ -163,20 +163,20 @@ const translations = {
     // Contact
     contact_eyebrow: "DIRECT CONSULTATION",
     contact_title: "Connect with Ar. Alina Nazish",
-    contact_subtitle: "Ready to elevate your UAE property value and accelerate your sale speed? Get in touch via WhatsApp or submit your consultation request below.",
+    contact_subtitle: "Ready to elevate your UAE property value and accelerate your sale speed? Get in touch via email or submit your consultation request below.",
     contact_subtitle_role: "Ar. Alina Nazish — Designer & Planner",
-    contact_wa_title: "WhatsApp Direct Line",
-    contact_wa_detail: "Instant responses for bookings & property inquiries.",
-    contact_wa_link: "Chat on WhatsApp &rarr;",
+    contact_email_title: "Email Consultation",
+    contact_email_detail: "Direct inquiry and architectural consultations.",
+    contact_email_link: "ar.khan.alina@gmail.com &rarr;",
     contact_ig_title: "Instagram",
     contact_ig_detail: "Behind-the-scenes staging walkthroughs & design reveals.",
     contact_coverage_title: "UAE SERVICE COVERAGE (ALL 7 EMIRATES)",
     contact_coverage_list: "Dubai • Abu Dhabi • Sharjah • Ajman • Ras Al Khaimah • Fujairah • Umm Al Quwain",
     form_title: "Book a Property Consultation",
-    form_subtitle: "Fill out your details below to generate a pre-formatted WhatsApp request directly to Ar. Alina Nazish.",
+    form_subtitle: "Fill out your details below to submit a consultation request directly to Ar. Alina Nazish.",
 
     lbl_name: "Full Name",
-    lbl_phone: "Phone / WhatsApp Number",
+    lbl_phone: "Phone Number",
     lbl_role: "I am contacting as...",
     opt_role_owner: "Property Owner (Selling or Renting Directly)",
     opt_role_agent: "Real Estate Agent / Broker",
@@ -198,7 +198,7 @@ const translations = {
     placeholder_name: "e.g. Sarah Mansoor",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Mention bedrooms, target sale timeline, or specific staging needs...",
-    btn_submit_wa: "Send Request via WhatsApp",
+    btn_submit_request: "Submit Consultation Request",
 
     // Footer
     footer_subtitle: "Ar. Alina Nazish — Designer & Planner",
@@ -210,7 +210,7 @@ const translations = {
     footer_nav_faq: "Frequently Asked Questions",
     footer_nav_contact: "Contact & Consultations",
     footer_contact_heading: "Direct Contact",
-    footer_wa_link: "WhatsApp",
+    footer_email_link: "Email: ar.khan.alina@gmail.com",
     footer_location: "Location: United Arab Emirates",
     footer_rights: "© 2026 naz by nazish (Ar. Alina Nazish). All Rights Reserved.",
     footer_crafted: "Crafted for UAE Luxury Real Estate Staging & Interior Transformation"
@@ -224,7 +224,7 @@ const translations = {
     nav_faq: "الأسئلة الشائعة",
     nav_contact: "اتصل بنا",
     nav_book_consultation: "حجز استشارة",
-    mobile_chat_wa: "محادثة عبر الواتساب",
+    mobile_chat_wa: "حجز استشارة",
     lang_select_label: "اللغة:",
 
     // Hero
@@ -344,7 +344,7 @@ const translations = {
     port_8_outcome: "+٤٠٪ انتشار على وسائل التواصل",
     port_8_desc: "تنسيق داخلي أنيق، إضاءة هادئة، وزوايا مميزة مصممة خصيصاً لتجربة مقهى فاخرة.",
 
-    lightbox_wa_btn: "استفسر عن تحويل عقاري مشابه",
+    lightbox_inquiry_btn: "استفسر عن تحويل عقاري مشابه",
 
     // FAQ
     faq_eyebrow: "المساعدة والوضوح",
@@ -375,20 +375,20 @@ const translations = {
     // Contact
     contact_eyebrow: "استشارة معمارية مباشرة",
     contact_title: "التواصل مع المهندسة ألينا نزيش",
-    contact_subtitle: "هل أنت مستعد لرفع قيمة عقارك وتسريع البيع؟ تواصل معنا عبر الواتساب أو أرسل تفاصيل طلبك أدناه.",
+    contact_subtitle: "هل أنت مستعد لرفع قيمة عقارك وتسريع البيع؟ تواصل معنا عبر البريد الإلكتروني أو أرسل تفاصيل طلبك أدناه.",
     contact_subtitle_role: "المهندسة ألينا نزيش — مصممة ومخططة معمارية",
-    contact_wa_title: "خط الواتساب المباشر",
-    contact_wa_detail: "استجابة فورية للحجوزات والاستفسارات العقارية.",
-    contact_wa_link: "محادثة عبر الواتساب &larr;",
+    contact_email_title: "استشارة عبر البريد الإلكتروني",
+    contact_email_detail: "استفسارات مباشرة واستشارات معمارية متخصصة.",
+    contact_email_link: "ar.khan.alina@gmail.com &larr;",
     contact_ig_title: "إنستغرام",
     contact_ig_detail: "جولات كواليس التنسيق والتصاميم الفاخرة.",
     contact_coverage_title: "تغطية الخدمات في الإمارات (جميع الإمارات الـ ٧)",
     contact_coverage_list: "دبي • أبوظبي • الشارقة • عجمان • رأس الخيمة • الفجيرة • أم القيوين",
     form_title: "حجز استشارة عقارية",
-    form_subtitle: "أدخل تفاصيل عقارك أدناه لإرسال طلب مجهز مباشرة عبر الواتساب إلى المهندسة ألينا نزيش.",
+    form_subtitle: "أدخل تفاصيل عقارك أدناه لإرسال طلب استشارة مباشرة إلى المهندسة ألينا نزيش.",
 
     lbl_name: "الاسم الكامل",
-    lbl_phone: "رقم الهاتف / الواتساب",
+    lbl_phone: "رقم الهاتف",
     lbl_role: "أتواصل بصفتي...",
     opt_role_owner: "مالك عقار شخصي (بيع أو تأجير مباشر)",
     opt_role_agent: "وكيل عقاري / وسيط",
@@ -410,7 +410,7 @@ const translations = {
     placeholder_name: "مثال: سارة أحمد",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "اذكر عدد الغرف، الجدول الزمني المستهدف، أو احتياجات التنسيق الخاص...",
-    btn_submit_wa: "إرسال الطلب عبر الواتساب",
+    btn_submit_request: "إرسال طلب الاستشارة",
 
     // Footer
     footer_subtitle: "المهندسة ألينا نزيش — مصممة ومخططة معمارية",
@@ -422,7 +422,7 @@ const translations = {
     footer_nav_faq: "الأسئلة الشائعة",
     footer_nav_contact: "التواصل والاستشارات",
     footer_contact_heading: "التواصل المباشر",
-    footer_wa_link: "واتساب",
+    footer_email_link: "البريد الإلكتروني: ar.khan.alina@gmail.com",
     footer_location: "الموقع: الإمارات العربية المتحدة",
     footer_rights: "© ٢٠٢٦ ناز باي نزيش (المهندسة ألينا نزيش). جميع الحقوق محفوظة.",
     footer_crafted: "صُمم لتنسيق العقارات الفاخرة والتحول الداخلي في دولة الإمارات"
@@ -436,7 +436,7 @@ const translations = {
     nav_faq: "FAQ",
     nav_contact: "Контакты",
     nav_book_consultation: "Консультация",
-    mobile_chat_wa: "Написать в WhatsApp",
+    mobile_chat_wa: "Консультация",
     lang_select_label: "Язык:",
 
     // Hero
@@ -483,7 +483,7 @@ const translations = {
     placeholder_name: "например, Алексей Иванов",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Укажите число комнат, желаемые сроки или пожелания по стейджингу...",
-    btn_submit_wa: "Отправить заявку в WhatsApp",
+    btn_submit_request: "Отправить заявку на консультацию",
 
     // Footer
     footer_subtitle: "Арх. Алина Назиш — Дизайнер и проектировщик",
@@ -559,7 +559,7 @@ const translations = {
     port_8_outcome: "Рост охвата в соцсетях +40%",
     port_8_desc: "Элегантный интерьер, атмосферный свет и фотогеничные зоны для уютного бутик-кафе.",
 
-    lightbox_wa_btn: "Узнать о похожем проекте",
+    lightbox_inquiry_btn: "Узнать подробнее об аналогичном проекте",
 
     // FAQ
     faq_eyebrow: "ВОПРОСЫ И ОТВЕТЫ",
@@ -590,20 +590,20 @@ const translations = {
     // Contact
     contact_eyebrow: "ПРЯМАЯ КОНСУЛЬТАЦИЯ",
     contact_title: "Связаться с арх. Алиной Назиш",
-    contact_subtitle: "Готовы повысить стоимость объекта и ускорить продажу в ОАЭ? Напишите в WhatsApp или заполните форму ниже.",
+    contact_subtitle: "Готовы повысить стоимость объекта и ускорить продажу в ОАЭ? Напишите на email или заполните форму ниже.",
     contact_subtitle_role: "Арх. Алина Назиш — Дизайнер и проектировщик",
-    contact_wa_title: "Прямой WhatsApp",
-    contact_wa_detail: "Быстрые ответы по бронированию и объектам.",
-    contact_wa_link: "Написать в WhatsApp &rarr;",
+    contact_email_title: "Email консультация",
+    contact_email_detail: "Прямые запросы и архитектурные консультации.",
+    contact_email_link: "ar.khan.alina@gmail.com &rarr;",
     contact_ig_title: "Instagram",
     contact_ig_detail: "Закулисье проектов и видеообзоры.",
     contact_coverage_title: "ЗОНА ОБСЛУЖИВАНИЯ В ОАЭ (ВСЕ 7 ЭМИРАТОВ)",
     contact_coverage_list: "Дубай • Абу-Даби • Шарджа • Аджман • Рас-эль-Хайма • Фуджейра • Умм-эль-Кувейн",
     form_title: "Записаться на консультацию",
-    form_subtitle: "Заполните форму ниже для отправки готового сообщения в WhatsApp арх. Алине Назиш.",
+    form_subtitle: "Заполните форму ниже для отправки запроса на консультацию арх. Алине Назиш.",
 
     lbl_name: "Полное имя",
-    lbl_phone: "Телефон / WhatsApp",
+    lbl_phone: "Номер телефона",
     lbl_role: "Я обращаюсь как...",
     opt_role_owner: "Частный собственник (продажа/аренда)",
     opt_role_agent: "Риелтор / Брокер",
@@ -625,7 +625,7 @@ const translations = {
     placeholder_name: "например, Алексей Иванов",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Укажите число комнат, желаемые сроки или пожелания по стейджиنгу...",
-    btn_submit_wa: "Отправить заявку в WhatsApp",
+    btn_submit_request: "Отправить заявку на консультацию",
 
     // Footer
     footer_subtitle: "Арх. Алина Назиш — Дизайнер и проектировщик",
@@ -637,7 +637,7 @@ const translations = {
     footer_nav_faq: "Часто задаваемые вопросы",
     footer_nav_contact: "Контакты и консультации",
     footer_contact_heading: "Прямые контакты",
-    footer_wa_link: "WhatsApp",
+    footer_email_link: "Email: ar.khan.alina@gmail.com",
     footer_location: "Локация: Объединенные Арабские Эмираты",
     footer_rights: "© 2026 naz by nazish (Арх. Алина Назиш). Все права защищены.",
     footer_crafted: "Создано для элитного хоум-стейджинга и дизайна в ОАЭ"

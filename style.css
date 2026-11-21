@@ -24,7 +24,6 @@
   --accent-metallic: linear-gradient(135deg, #C0C0C0 0%, #FFFFFF 50%, #A9A9A9 100%);
   --accent-metallic-dark: linear-gradient(135deg, #2A2B30 0%, #101114 50%, #1F2025 100%);
   --accent-chrome: linear-gradient(to right, #C0C0C0 0%, #F5F5F5 50%, #A9A9A9 100%);
-  --accent-whatsapp: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   
   --border-color: rgba(192, 192, 192, 0.2);
   --border-glow: rgba(192, 192, 192, 0.3);
@@ -198,26 +197,6 @@ h1, h2, h3, h4, .serif-font {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.btn-whatsapp {
-  background: var(--accent-whatsapp);
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  gap: 0.75rem;
-  font-weight: 600;
-  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.15);
-}
-
-.btn-whatsapp:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
-  filter: brightness(1.1);
-}
-
-.btn-whatsapp svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
 
 /* Arrow Hover Effect */
 .btn-arrow {
@@ -1720,9 +1699,6 @@ html[dir="rtl"] .hero-label .line {
   flex-shrink: 0;
 }
 
-html[dir="rtl"] .btn-whatsapp svg {
-  transform: scaleX(-1);
-}
 
 html[dir="rtl"] .slider-container-box {
   direction: ltr; /* Keeps comparison slider running left-to-right normally for better user experience */

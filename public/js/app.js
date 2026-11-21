@@ -12,7 +12,6 @@ function initApp() {
   initPortfolioLightbox();
   initFAQAccordion();
   initContactForm();
-  initWhatsAppButtons();
 }
 
 if (document.readyState !== 'loading') {
@@ -258,13 +257,12 @@ function initPortfolioLightbox() {
       if (outcomeEl) outcomeEl.innerText = outcome;
       if (descEl) descEl.innerText = desc;
 
-      const whatsappBtn = document.getElementById('lightboxWhatsappBtn');
-      if (whatsappBtn) {
-        if (dict['lightbox_wa_btn']) {
-          whatsappBtn.innerText = dict['lightbox_wa_btn'];
+      const inquiryBtn = document.getElementById('lightboxInquiryBtn');
+      if (inquiryBtn) {
+        if (dict['lightbox_inquiry_btn']) {
+          inquiryBtn.innerText = dict['lightbox_inquiry_btn'];
         }
-        const msg = encodeURIComponent(`Hello Ar. Alina, I am interested in a similar transformation to "${title}".`);
-        whatsappBtn.href = `https://wa.me/971500000000?text=${msg}`;
+        inquiryBtn.href = window.location.pathname.includes('contact') ? '#consultationForm' : (document.getElementById('contact') ? '#contact' : 'contact.html');
       }
 
       lightboxModal.classList.add('open');
@@ -347,11 +345,29 @@ function initFAQAccordion() {
 }
 
 /* ==========================================================================
-   Contact Form to WhatsApp Handler
+   Consultation Request Form Handler
    ========================================================================== */
 function initContactForm() {
   const contactForm = document.getElementById('consultationForm');
   if (!contactForm) return;
+
+  // Auto-select preferred tier from URL query parameters if present
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tierParam = urlParams.get('tier');
+    const planSelect = document.getElementById('formPlanTier');
+    if (tierParam && planSelect) {
+      if (tierParam.toLowerCase().includes('essential')) {
+        planSelect.selectedIndex = 0;
+      } else if (tierParam.toLowerCase().includes('popular')) {
+        planSelect.selectedIndex = 1;
+      } else if (tierParam.toLowerCase().includes('custom')) {
+        planSelect.selectedIndex = 2;
+      }
+    }
+  } catch (err) {
+    // Ignore URL parsing errors on static file paths
+  }
 
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -364,39 +380,40 @@ function initContactForm() {
     const planTier = document.getElementById('formPlanTier')?.value || 'Essential (499 AED)';
     const notes = document.getElementById('formNotes')?.value.trim() || 'No additional details provided.';
 
-    const text = `Hello Ar. Alina Nazish,
+    const subject = `Property Consultation Request: ${name} (${planTier})`;
+    const body = `Hello Ar. Alina Nazish,
 
 I would like to request a property consultation for naz by nazish.
 
-*Client Name:* ${name}
-*Client Role:* ${userRole}
-*Phone/WhatsApp:* ${phone}
-*Property Location:* ${location}
-*Property Type:* ${propType}
-*Service Tier Interested:* ${planTier}
-*Property Details:* ${notes}`;
+Client Name: ${name}
+Client Role: ${userRole}
+Phone Number: ${phone}
+Property Location: ${location}
+Property Type: ${propType}
+Service Tier: ${planTier}
+Property Details: ${notes}`;
 
-    const encodedText = encodeURIComponent(text);
-    const whatsappUrl = `https://wa.me/971500000000?text=${encodedText}`;
+    // Display inline confirmation banner
+    let alertBanner = document.getElementById('consultationSuccessBanner');
+    if (!alertBanner) {
+      alertBanner = document.createElement('div');
+      alertBanner.id = 'consultationSuccessBanner';
+      alertBanner.style.cssText = 'background: rgba(184, 151, 106, 0.15); border: 1px solid var(--gold-dark); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; text-align: center; color: var(--text-primary); font-size: 0.95rem; line-height: 1.5;';
+      contactForm.parentNode.insertBefore(alertBanner, contactForm);
+    }
+    const currentLang = localStorage.getItem('naz_lang') || 'en';
+    const successMessages = {
+      en: 'Thank you for your consultation request! Ar. Alina Nazish will review your details and contact you shortly.',
+      ar: 'شكراً لطلب الاستشارة! ستقوم المهندسة ألينا نزيش بمراجعة تفاصيل عقارك والتواصل معك قريباً.',
+      ru: 'Благодарим за заявку на консультацию! Арх. Алина Назиш свяжется с вами в ближайшее время.'
+    };
+    alertBanner.innerHTML = `<strong>${successMessages[currentLang] || successMessages.en}</strong>`;
+    alertBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-    // Launch WhatsApp
-    window.open(whatsappUrl, '_blank');
-  });
-}
+    // Launch email client with pre-filled inquiry details
+    const mailtoUrl = `mailto:ar.khan.alina@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
 
-/* ==========================================================================
-   WhatsApp Dynamic Action Buttons
-   ========================================================================== */
-function initWhatsAppButtons() {
-  const bookBtns = document.querySelectorAll('[data-plan-book]');
-
-  bookBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const planName = btn.getAttribute('data-plan-book');
-      let text = `Hello Ar. Alina Nazish, I would like to book a consultation for the ${planName} tier for my property.`;
-      
-      const whatsappUrl = `https://wa.me/971500000000?text=${encodeURIComponent(text)}`;
-      window.open(whatsappUrl, '_blank');
-    });
+    contactForm.reset();
   });
 }

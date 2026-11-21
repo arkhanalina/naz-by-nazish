@@ -267,17 +267,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
 }
 
-.btn-whatsapp {
-  background: #25D366;
-  color: #FFFFFF;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-}
-
-.btn-whatsapp:hover {
-  background: #1EBE5D;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
-}
 
 .btn-secondary {
   background: rgba(255, 253, 250, 0.8);
