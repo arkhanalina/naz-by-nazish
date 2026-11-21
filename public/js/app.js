@@ -1,5 +1,5 @@
 /**
- * naz by nazish — Luxury Interior Design & Staging
+ * naz by nazish — Architecture & Spatial Design
  * Client-Side JavaScript Application
  */
 
@@ -32,8 +32,15 @@ function initNavigation() {
     
     // Normalize pageId
     pageId = pageId.replace('#', '');
-    const targetPage = document.getElementById(pageId) || document.getElementById('home');
 
+    // Map legacy pricing hash to services if services view is present
+    if (pageId === 'pricing' && document.getElementById('services')) {
+      pageId = 'services';
+    } else if (pageId === 'services' && !document.getElementById('services') && document.getElementById('pricing')) {
+      pageId = 'pricing';
+    }
+
+    const targetPage = document.getElementById(pageId) || document.getElementById('home');
     if (!targetPage) return;
 
     // Update active view
@@ -44,8 +51,8 @@ function initNavigation() {
 
     // Update active nav link
     document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
-      const linkTarget = link.getAttribute('href')?.replace('#', '') || link.getAttribute('data-navigate');
-      if (linkTarget === pageId) {
+      const linkTarget = link.getAttribute('href')?.replace('#', '').replace('.html', '') || link.getAttribute('data-navigate');
+      if (linkTarget === pageId || (pageId === 'services' && linkTarget === 'pricing')) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -63,30 +70,34 @@ function initNavigation() {
 
     // Dynamic Title based on current language
     window.updateI18nTitles = function() {
-      const currentHash = window.location.hash.replace('#', '') || 'home';
+      const rawHash = window.location.hash.replace('#', '') || 'home';
+      const currentHash = (rawHash === 'pricing' && document.getElementById('services')) ? 'services' : rawHash;
       const lang = localStorage.getItem('naz_lang') || 'en';
       
       const titlesMap = {
         en: {
-          home: 'naz by nazish — Luxury Interior Design & Staging',
-          pricing: 'Pricing Plans — naz by nazish',
-          portfolio: 'Portfolio — naz by nazish',
-          faq: 'FAQ — naz by nazish',
-          contact: 'Book Consultation — naz by nazish'
+          home: 'naz by nazish — Architecture & Spatial Design | Ar. Alina Nazish',
+          services: 'Architectural Services & Practice — naz by nazish',
+          pricing: 'Architectural Services & Practice — naz by nazish',
+          portfolio: 'Selected Works & Portfolio — naz by nazish',
+          faq: 'Practice & FAQ — naz by nazish',
+          contact: 'Commission Inquiry — naz by nazish'
         },
         ar: {
-          home: 'ناز باي نزيش — التنسيق العقاري والتصميم الداخلي الفاخر',
-          pricing: 'خطط الأسعار — ناز باي نزيش',
-          portfolio: 'معرض الأعمال — ناز باي نزيش',
-          faq: 'الأسئلة الشائعة — ناز باي نزيش',
-          contact: 'حجز استشارة — ناز باي نزيش'
+          home: 'ناز باي نزيش — العمارة والتصميم المكاني | المهندسة ألينا نزيش',
+          services: 'الخدمات والممارسات المعمارية — ناز باي نزيش',
+          pricing: 'الخدمات والممارسات المعمارية — ناز باي نزيش',
+          portfolio: 'معرض المشاريع المعمارية — ناز باي نزيش',
+          faq: 'المنهجية والأسئلة الشائعة — ناز باي نزيش',
+          contact: 'طلب مشروع واستشارة — ناز باي نزيش'
         },
         ru: {
-          home: 'naz by nazish — Дизайн интерьера и хоум-стейджинг в ОАЭ',
-          pricing: 'Тарифы — naz by nazish',
-          portfolio: 'Портфолио — naz by nazish',
-          faq: 'Часто задаваемые вопросы — naz by nazish',
-          contact: 'Записаться на консультацию — naz by nazish'
+          home: 'naz by nazish — Архитектура и пространственный дизайн | Арх. Алина Назиш',
+          services: 'Архитектурные услуги и практика — naz by nazish',
+          pricing: 'Архитектурные услуги и практика — naz by nazish',
+          portfolio: 'Архитектурное портфолио — naz by nazish',
+          faq: 'Практика и FAQ — naz by nazish',
+          contact: 'Запрос на проект — naz by nazish'
         }
       };
 
@@ -185,7 +196,7 @@ function initHeaderScroll() {
 }
 
 /* ==========================================================================
-   Portfolio Filter System (Residential & Commercial)
+   Portfolio Filter System (Residential & Commercial Architecture)
    ========================================================================== */
 function initPortfolioFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -238,12 +249,12 @@ function initPortfolioLightbox() {
       const lang = localStorage.getItem('naz_lang') || 'en';
       const dict = (window.translations && window.translations[lang]) ? window.translations[lang] : {};
 
-      const title = (itemKey && dict[`${itemKey}_title`]) || card.querySelector('.portfolio-card-title')?.innerText || 'Luxury Project';
+      const title = (itemKey && dict[`${itemKey}_title`]) || card.querySelector('.portfolio-card-title')?.innerText || 'Architectural Project';
       const isRes = card.getAttribute('data-category') === 'residential';
-      const category = isRes ? (dict['badge_residential'] || 'Residential') : (dict['badge_commercial'] || 'Commercial');
+      const category = isRes ? (dict['badge_residential'] || 'Residential Architecture') : (dict['badge_commercial'] || 'Commercial & Hospitality');
       const imgSrc = card.querySelector('img')?.src || '';
-      const outcome = (itemKey && dict[`${itemKey}_outcome`]) || card.getAttribute('data-outcome') || 'Sold 3x faster';
-      const desc = (itemKey && dict[`${itemKey}_desc`]) || card.getAttribute('data-desc') || 'Bespoke architectural layout, furniture curation, and lighting design by Ar. Alina Nazish.';
+      const outcome = (itemKey && dict[`${itemKey}_outcome`]) || card.getAttribute('data-outcome') || 'Spatial Planning & Architecture';
+      const desc = (itemKey && dict[`${itemKey}_desc`]) || card.getAttribute('data-desc') || 'Bespoke architectural design, spatial reconfiguration, and materiality curation by Ar. Alina Nazish.';
 
       const titleEl = document.getElementById('lightboxTitle');
       const catEl = document.getElementById('lightboxCategory');
@@ -324,7 +335,6 @@ function initFAQAccordion() {
       trigger.setAttribute('aria-expanded', 'true');
       const content = faqItem.querySelector('.faq-content');
       if (content) {
-        // Measure after adding 'open' so padding and CSS dimensions apply
         requestAnimationFrame(() => {
           const height = content.scrollHeight;
           content.style.maxHeight = (height > 0 ? height + 30 : 600) + 'px';
@@ -345,67 +355,51 @@ function initFAQAccordion() {
 }
 
 /* ==========================================================================
-   Consultation Request Form Handler
+   Architectural Commission Inquiry Form Handler
    ========================================================================== */
 function initContactForm() {
   const contactForm = document.getElementById('consultationForm');
   if (!contactForm) return;
-
-  // Auto-select preferred tier from URL query parameters if present
-  try {
-    const urlParams = new URLSearchParams(window.location.search);
-    const tierParam = urlParams.get('tier');
-    const planSelect = document.getElementById('formPlanTier');
-    if (tierParam && planSelect) {
-      if (tierParam.toLowerCase().includes('essential')) {
-        planSelect.selectedIndex = 0;
-      } else if (tierParam.toLowerCase().includes('popular')) {
-        planSelect.selectedIndex = 1;
-      } else if (tierParam.toLowerCase().includes('custom')) {
-        planSelect.selectedIndex = 2;
-      }
-    }
-  } catch (err) {
-    // Ignore URL parsing errors on static file paths
-  }
 
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const name = document.getElementById('formName')?.value.trim() || 'Client';
     const phone = document.getElementById('formPhone')?.value.trim() || 'Not specified';
-    const userRole = document.getElementById('formUserRole')?.value || 'Property Owner';
+    const userRole = document.getElementById('formUserRole')?.value || 'Private Homeowner';
     const location = document.getElementById('formLocation')?.value || 'Dubai';
-    const propType = document.getElementById('formPropType')?.value || 'Residential';
-    const planTier = document.getElementById('formPlanTier')?.value || 'Essential (499 AED)';
-    const notes = document.getElementById('formNotes')?.value.trim() || 'No additional details provided.';
+    const propType = document.getElementById('formPropType')?.value || 'Residential Architecture';
+    const planTier = document.getElementById('formPlanTier')?.value || 'Full Architecture & Spatial Design';
+    const notes = document.getElementById('formNotes')?.value.trim() || 'No additional project brief provided.';
 
-    const subject = `Property Consultation Request: ${name} (${planTier})`;
+    const subject = `Architectural Commission Inquiry: ${name} (${propType})`;
     const body = `Hello Ar. Alina Nazish,
 
-I would like to request a property consultation for naz by nazish.
+I would like to initiate an architectural commission inquiry for naz by nazish.
 
 Client Name: ${name}
 Client Role: ${userRole}
-Phone Number: ${phone}
-Property Location: ${location}
-Property Type: ${propType}
-Service Tier: ${planTier}
-Property Details: ${notes}`;
+Phone / WhatsApp: ${phone}
+Project Location: ${location}
+Project Typology: ${propType}
+Services Required: ${planTier}
+
+Project Brief & Details:
+${notes}`;
 
     // Display inline confirmation banner
     let alertBanner = document.getElementById('consultationSuccessBanner');
     if (!alertBanner) {
       alertBanner = document.createElement('div');
       alertBanner.id = 'consultationSuccessBanner';
-      alertBanner.style.cssText = 'background: rgba(184, 151, 106, 0.15); border: 1px solid var(--gold-dark); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; text-align: center; color: var(--text-primary); font-size: 0.95rem; line-height: 1.5;';
+      alertBanner.style.cssText = 'background: rgba(184, 151, 106, 0.15); border: 1px solid var(--gold-dark); border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem; text-align: center; color: var(--text-primary); font-size: 0.95rem; line-height: 1.5;';
       contactForm.parentNode.insertBefore(alertBanner, contactForm);
     }
     const currentLang = localStorage.getItem('naz_lang') || 'en';
     const successMessages = {
-      en: 'Thank you for your consultation request! Ar. Alina Nazish will review your details and contact you shortly.',
-      ar: 'شكراً لطلب الاستشارة! ستقوم المهندسة ألينا نزيش بمراجعة تفاصيل عقارك والتواصل معك قريباً.',
-      ru: 'Благодарим за заявку на консультацию! Арх. Алина Назиш свяжется с вами в ближайшее время.'
+      en: 'Thank you for your commission inquiry! Ar. Alina Nazish will review your project brief and contact you shortly.',
+      ar: 'شكراً لطلبك! ستقوم المهندسة ألينا نزيش بمراجعة تفاصيل مشروعك المعماري والتواصل معك قريباً.',
+      ru: 'Благодарим за ваш запрос! Арх. Алина Назиш ознакомится с описанием проекта и свяжется с вами в ближайшее время.'
     };
     alertBanner.innerHTML = `<strong>${successMessages[currentLang] || successMessages.en}</strong>`;
     alertBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });

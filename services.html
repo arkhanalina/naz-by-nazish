@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architectural Services & Practice — naz by nazish | Ar. Alina Nazish</title>
+  <meta name="description" content="Architectural disciplines and practice areas by Ar. Alina Nazish: Custom residential villas, interior architecture, commercial & hospitality spaces across the UAE." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container nav-container">
+      <a href="index.html#home" class="brand-logo">
+        <img src="public/assets/logo.png" alt="naz by nazish logo" class="brand-logo-img" />
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="services.html" class="nav-link active" data-i18n="nav_services">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">Portfolio</a></li>
+          <li><a href="faq.html" class="nav-link" data-i18n="nav_faq">Practice & FAQ</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="ar" aria-label="العربية">AR</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang="ru" aria-label="Русский">RU</button>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary">
+          <span data-i18n="nav_book_consultation">Commission Inquiry</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#home" class="mobile-nav-link" data-i18n="nav_home">Home</a>
+    <a href="services.html" class="mobile-nav-link active" data-i18n="nav_services">Services</a>
+    <a href="portfolio.html" class="mobile-nav-link" data-i18n="nav_portfolio">Portfolio</a>
+    <a href="faq.html" class="mobile-nav-link" data-i18n="nav_faq">Practice & FAQ</a>
+    <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact Us</a>
+    
+    <div class="mobile-lang-switcher">
+      <span class="mobile-lang-label" data-i18n="lang_select_label">Language:</span>
+      <div class="mobile-lang-buttons">
+        <button type="button" class="lang-btn active" data-lang="en">English</button>
+        <button type="button" class="lang-btn" data-lang="ar">العربية</button>
+        <button type="button" class="lang-btn" data-lang="ru">Русский</button>
+      </div>
+    </div>
+
+    <div style="margin-top: 1rem;">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">
+        <span data-i18n="nav_book_consultation">Commission Inquiry</span>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" style="padding-top: 4rem;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <div class="eyebrow" style="justify-content: center;" data-i18n="services_eyebrow">PRACTICE & DISCIPLINES</div>
+          <h1 class="section-title" data-i18n="services_title">Architectural Services</h1>
+          <p class="section-subtitle" style="margin-left: auto; margin-right: auto;" data-i18n="services_subtitle">
+            From ground-up private residences to refined interior transformations and bespoke commercial spaces across the UAE.
+          </p>
+          <p style="text-align: center; color: var(--gold-dark); font-weight: 600; font-size: 0.9375rem; margin-top: -2rem; margin-bottom: 2.5rem;" data-i18n="pricing_audience_note">
+            Tailored architectural commissions for private homeowners, commercial operators, and boutique developers.
+          </p>
+        </div>
+
+        <!-- 3 Architectural Disciplines Grid -->
+        <div class="pricing-grid">
+          <!-- Discipline 1: Residential Architecture -->
+          <div class="glass-card pricing-card">
+            <div class="pricing-header">
+              <div class="eyebrow" data-i18n="tier_1_eyebrow">TYPOLOGY 01</div>
+              <h2 class="pricing-title" data-i18n="tier_1_title">Residential Architecture</h2>
+              <div class="pricing-scope" style="margin-top: 0.75rem;" data-i18n="tier_1_subtitle">Custom Villas & Private Estates</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_1_feat_1"><strong>Architectural Concept & Facade Design</strong></span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_1_feat_2"><strong>Spatial Layouts & Volumetric Massing</strong></span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_1_feat_3"><strong>Indoor-Outdoor Flow & Daylighting Analysis</strong></span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_1_feat_4">Zoning Evaluation & Authority Coordination</span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-secondary" style="width: 100%; margin-top: auto; text-align: center;" data-i18n="tier_1_btn">
+              Inquire for Residential Project
+            </a>
+          </div>
+
+          <!-- Discipline 2: Interior Architecture -->
+          <div class="glass-card pricing-card featured">
+            <span class="pricing-badge" data-i18n="tier_2_badge">CORE PRACTICE</span>
+            <div class="pricing-header">
+              <div class="eyebrow" data-i18n="tier_2_eyebrow">TYPOLOGY 02</div>
+              <h2 class="pricing-title" data-i18n="tier_2_title">Interior Architecture</h2>
+              <div class="pricing-scope" style="margin-top: 0.75rem;" data-i18n="tier_2_subtitle">Penthouses, Luxury Residences & Remodels</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_2_feat_1"><strong>Complete Spatial Reconfiguration & Layouts</strong></span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_2_feat_2"><strong>Bespoke Architectural Joinery & Millwork</strong></span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_2_feat_3">Noble Material Palettes (Travertine, Oak, Brass)</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_2_feat_4">Architectural Lighting Design & Automation Curation</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_2_feat_5">3D Realistic Spatial Renders & Mood Studies</span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-gold" style="width: 100%; margin-top: auto; text-align: center;" data-i18n="tier_2_btn">
+              Inquire for Interior Architecture
+            </a>
+          </div>
+
+          <!-- Discipline 3: Commercial & Hospitality -->
+          <div class="glass-card pricing-card">
+            <div class="pricing-header">
+              <div class="eyebrow" data-i18n="tier_3_eyebrow">TYPOLOGY 03</div>
+              <h2 class="pricing-title" data-i18n="tier_3_title">Commercial & Hospitality</h2>
+              <div class="pricing-scope" style="margin-top: 0.75rem;" data-i18n="tier_3_subtitle">Artisanal Bakeries, Cafés & Boutique Retail</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_3_feat_1"><strong>Customer Circulation & Operational Workflow</strong></span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_3_feat_2">Bespoke Display Counters & Bar Ergonomics</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_3_feat_3">Brand-Aligned Spatial Identity & Atmosphere</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_3_feat_4">Detailed Technical Drawings & Joinery Blueprints</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-feature-icon">✦</span>
+                <span data-i18n="tier_3_feat_5">Contractor Coordination & Fit-Out Supervision</span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: auto; text-align: center;" data-i18n="tier_3_btn">
+              Inquire for Commercial Project
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center;">
+          <p style="color: var(--text-secondary); font-size: 0.9375rem;" data-i18n="pricing_bulk_note">
+            Looking for comprehensive masterplanning, multi-unit design, or full architectural consultation? <a href="contact.html" style="color: var(--gold-dark); text-decoration: underline; font-weight: 600;" data-i18n="pricing_bulk_link">Connect directly with Ar. Alina Nazish to discuss your commission.</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container" style="text-align: center;">
+      <img src="public/assets/logo-light.png" alt="naz by nazish logo" class="footer-logo-img" style="margin: 0 auto 0.75rem auto;" />
+      <div class="footer-brand">naz by nazish</div>
+      <div class="footer-subtitle" data-i18n="footer_subtitle">Ar. Alina Nazish — Principal Architect & Spatial Designer</div>
+      <p style="color: #A8A29E; margin-top: 1rem;"><a href="mailto:ar.khan.alina@gmail.com" style="color: inherit; text-decoration: none;">ar.khan.alina@gmail.com</a></p>
+      <div style="margin-top: 1.5rem; font-size: 0.8125rem; color: #78716C;" data-i18n="footer_rights">&copy; 2026 naz by nazish (Ar. Alina Nazish). All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="public/js/i18n.js"></script>
+  <script src="public/js/app.js"></script>
+</body>
+</html>
