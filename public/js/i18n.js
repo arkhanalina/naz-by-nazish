@@ -12,7 +12,7 @@ const translations = {
     nav_faq: "FAQ",
     nav_contact: "Contact Us",
     nav_book_consultation: "Book Consultation",
-    mobile_chat_wa: "Chat on WhatsApp (+971 50 000 0000)",
+    mobile_chat_wa: "Chat on WhatsApp",
     lang_select_label: "Language:",
 
     // Hero
@@ -167,6 +167,7 @@ const translations = {
     contact_subtitle_role: "Ar. Alina Nazish — Designer & Planner",
     contact_wa_title: "WhatsApp Direct Line",
     contact_wa_detail: "Instant responses for bookings & property inquiries.",
+    contact_wa_link: "Chat on WhatsApp &rarr;",
     contact_ig_title: "Instagram",
     contact_ig_detail: "Behind-the-scenes staging walkthroughs & design reveals.",
     contact_coverage_title: "UAE SERVICE COVERAGE (ALL 7 EMIRATES)",
@@ -197,7 +198,7 @@ const translations = {
     placeholder_name: "e.g. Sarah Mansoor",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Mention bedrooms, target sale timeline, or specific staging needs...",
-    btn_submit_wa: "Send Request via WhatsApp (+971 50 000 0000)",
+    btn_submit_wa: "Send Request via WhatsApp",
 
     // Footer
     footer_subtitle: "Ar. Alina Nazish — Designer & Planner",
@@ -209,6 +210,7 @@ const translations = {
     footer_nav_faq: "Frequently Asked Questions",
     footer_nav_contact: "Contact & Consultations",
     footer_contact_heading: "Direct Contact",
+    footer_wa_link: "WhatsApp",
     footer_location: "Location: United Arab Emirates",
     footer_rights: "© 2026 naz by nazish (Ar. Alina Nazish). All Rights Reserved.",
     footer_crafted: "Crafted for UAE Luxury Real Estate Staging & Interior Transformation"
@@ -222,7 +224,7 @@ const translations = {
     nav_faq: "الأسئلة الشائعة",
     nav_contact: "اتصل بنا",
     nav_book_consultation: "حجز استشارة",
-    mobile_chat_wa: "محادثة عبر الواتساب (+971 50 000 0000)",
+    mobile_chat_wa: "محادثة عبر الواتساب",
     lang_select_label: "اللغة:",
 
     // Hero
@@ -377,6 +379,7 @@ const translations = {
     contact_subtitle_role: "المهندسة ألينا نزيش — مصممة ومخططة معمارية",
     contact_wa_title: "خط الواتساب المباشر",
     contact_wa_detail: "استجابة فورية للحجوزات والاستفسارات العقارية.",
+    contact_wa_link: "محادثة عبر الواتساب &larr;",
     contact_ig_title: "إنستغرام",
     contact_ig_detail: "جولات كواليس التنسيق والتصاميم الفاخرة.",
     contact_coverage_title: "تغطية الخدمات في الإمارات (جميع الإمارات الـ ٧)",
@@ -407,7 +410,7 @@ const translations = {
     placeholder_name: "مثال: سارة أحمد",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "اذكر عدد الغرف، الجدول الزمني المستهدف، أو احتياجات التنسيق الخاص...",
-    btn_submit_wa: "إرسال الطلب عبر الواتساب (+971 50 000 0000)",
+    btn_submit_wa: "إرسال الطلب عبر الواتساب",
 
     // Footer
     footer_subtitle: "المهندسة ألينا نزيش — مصممة ومخططة معمارية",
@@ -419,6 +422,7 @@ const translations = {
     footer_nav_faq: "الأسئلة الشائعة",
     footer_nav_contact: "التواصل والاستشارات",
     footer_contact_heading: "التواصل المباشر",
+    footer_wa_link: "واتساب",
     footer_location: "الموقع: الإمارات العربية المتحدة",
     footer_rights: "© ٢٠٢٦ ناز باي نزيش (المهندسة ألينا نزيش). جميع الحقوق محفوظة.",
     footer_crafted: "صُمم لتنسيق العقارات الفاخرة والتحول الداخلي في دولة الإمارات"
@@ -432,7 +436,7 @@ const translations = {
     nav_faq: "FAQ",
     nav_contact: "Контакты",
     nav_book_consultation: "Консультация",
-    mobile_chat_wa: "Написать в WhatsApp (+971 50 000 0000)",
+    mobile_chat_wa: "Написать в WhatsApp",
     lang_select_label: "Язык:",
 
     // Hero
@@ -479,7 +483,7 @@ const translations = {
     placeholder_name: "например, Алексей Иванов",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Укажите число комнат, желаемые сроки или пожелания по стейджингу...",
-    btn_submit_wa: "Отправить заявку в WhatsApp (+971 50 000 0000)",
+    btn_submit_wa: "Отправить заявку в WhatsApp",
 
     // Footer
     footer_subtitle: "Арх. Алина Назиш — Дизайнер и проектировщик",
@@ -590,6 +594,7 @@ const translations = {
     contact_subtitle_role: "Арх. Алина Назиш — Дизайнер и проектировщик",
     contact_wa_title: "Прямой WhatsApp",
     contact_wa_detail: "Быстрые ответы по бронированию и объектам.",
+    contact_wa_link: "Написать в WhatsApp &rarr;",
     contact_ig_title: "Instagram",
     contact_ig_detail: "Закулисье проектов и видеообзоры.",
     contact_coverage_title: "ЗОНА ОБСЛУЖИВАНИЯ В ОАЭ (ВСЕ 7 ЭМИРАТОВ)",
@@ -620,7 +625,7 @@ const translations = {
     placeholder_name: "например, Алексей Иванов",
     placeholder_phone: "+971 50 000 0000",
     placeholder_notes: "Укажите число комнат, желаемые сроки или пожелания по стейджиنгу...",
-    btn_submit_wa: "Отправить заявку в WhatsApp (+971 50 000 0000)",
+    btn_submit_wa: "Отправить заявку в WhatsApp",
 
     // Footer
     footer_subtitle: "Арх. Алина Назиш — Дизайнер и проектировщик",
@@ -632,6 +637,7 @@ const translations = {
     footer_nav_faq: "Часто задаваемые вопросы",
     footer_nav_contact: "Контакты и консультации",
     footer_contact_heading: "Прямые контакты",
+    footer_wa_link: "WhatsApp",
     footer_location: "Локация: Объединенные Арабские Эмираты",
     footer_rights: "© 2026 naz by nazish (Арх. Алина Назиш). Все права защищены.",
     footer_crafted: "Создано для элитного хоум-стейджинга и дизайна в ОАЭ"
